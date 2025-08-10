@@ -1,8 +1,12 @@
+# Site settings
 theme: jekyll-theme-minimal
 title: SentinelByte - Tech Insights
 description: Technical content and hands-on guides on cybersecurity, automation, AI/ML, cloud, and more.
 url: "https://sentinelbyte.github.io"
-author: SentinelByte (Dan Cohen Vaxman)
+author: "Dan Cohen Vaxman (SentinelByte)"
+github_username: SentinelByte
+
+# Social links
 github_username: SentinelByte
 
 # Social links (optional)
@@ -20,3 +24,4 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - _site
