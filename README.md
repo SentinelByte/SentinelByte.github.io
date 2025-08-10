@@ -1,8 +1,7 @@
-# SentinelByte.github.io
 # SentinelByte Tech Blog
-
 **By Dan Cohen Vaxman**  
 Security Engineer | Automation Enthusiast | Cloud Defender
+Based in Germany
 
 ---
 
