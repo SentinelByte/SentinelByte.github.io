@@ -1,6 +1,7 @@
 # SentinelByte Tech Blog
-## By Dan Cohen Vaxman
-## Security Engineer | Automation Enthusiast | Cloud Defender
+Security Engineer | Automation Enthusiast | Cloud Defender
+
+By Dan Cohen Vaxman
 
 Based in Germany
 
