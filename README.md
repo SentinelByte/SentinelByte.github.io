@@ -3,6 +3,8 @@
 Security Engineer | Automation Enthusiast | Cloud Defender
 Based in Germany
 
+Based in Germany
+
 ---
 
 ## 🔍 About
