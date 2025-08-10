@@ -2,8 +2,9 @@
 layout: post
 title: "Pig Butchering Scams"
 date: 2025-08-10 14:37:05
-categories: social-engineering fraud scams cybersecurity-awareness
+categories: [social-engineering, fraud scams, cybersecurity,-awareness]
 ---
+
 
 # The Growing Threat of “Pig Butchering” Scams: A Deep Dive into a Sophisticated Fraud
 
