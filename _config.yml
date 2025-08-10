@@ -7,20 +7,15 @@ author: "Dan Cohen Vaxman (SentinelByte)"
 github_username: SentinelByte
 
 # Social links
+github_username: SentinelByte
+
+# Social links (optional)
 linkedin: https://www.linkedin.com/in/35b767173/
 rss: rss
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-
-# Use custom layout and include dark mode stylesheet
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-      stylesheet: "dark-mode.css"
 
 # Exclude these files from the site build
 exclude:
