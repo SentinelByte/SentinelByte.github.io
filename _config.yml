@@ -1,4 +1,4 @@
 # Site settings
-theme: jekyll-theme-minimal
+theme: minima
 title: SentinelByte - Tech Insights
 description: Technical content and hands-on guides on cybersecurity, automation, AI/ML, cloud, and more.
