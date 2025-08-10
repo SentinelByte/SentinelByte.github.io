@@ -29,8 +29,9 @@ Security Engineer | Automation Enthusiast | Cloud Defender
 ---
 
 ## ✍️ Blog
+## ✍️ Latest Posts
 
-Explore the [SentinelByte GitHub Pages site](https://sentinelbyte.github.io/) for blog posts, write-ups, and field reports on topics ranging from:
+Check out the latest posts on [SentinelByte's Blog »](/blog/) for blog posts, write-ups, and field reports on topics ranging from:
 
 ### 🔎 Investigative & Field Topics
 - Cybersecurity threats and modern scam breakdowns  
