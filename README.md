@@ -20,14 +20,11 @@ Security Engineer | Automation Enthusiast | Cloud Defender
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 My Favorite Tech Stack
 
-This project (and others you'll find here) uses:
-
-- **Python** – for scripting, automation, and backend logic  
-- **TypeScript** – for scalable frontend and service code  
-- **Terraform** – for secure and auditable infrastructure deployment  
-- **Jekyll/GitHub Pages** – for site generation and blog publishing  
+- **Python & RestAPI** – for scripting, automation, and backend logic  
+- **TypeScript & JS** – for scalable frontend and service code  
+- **Terraform** – for secure and auditable infrastructure deployment (IaC)
 
 ---
 
