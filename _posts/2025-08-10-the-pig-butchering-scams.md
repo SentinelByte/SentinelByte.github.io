@@ -12,7 +12,7 @@ tags: [social-engineering, scam, fraud, awerness, cybersecurity, crypto]
 
 In the fast-paced, ever-evolving world of cybercrime, few scams have grown as dangerous and insidious as the so-called **“Pig Butchering Scam.”** This scam is a sophisticated blend of social engineering, fake investment platforms, and cryptocurrency fraud, designed to fatten victims financially before ruthlessly draining their assets.
 
-## How Scam Works
+## How the Scam Works
 
 ### 1. Initial Contact
 
