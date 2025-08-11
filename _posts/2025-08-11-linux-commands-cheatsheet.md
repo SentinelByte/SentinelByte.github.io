@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Comprehensive Linux Command Cheat Sheet"
-date: 2025-08-11 14:37:05
+date: 2025-08-11
 categories: linux
 author: Dan.C
 tags: [linux, terminal, cheat-sheet, command-line, sysadmin, devops]
