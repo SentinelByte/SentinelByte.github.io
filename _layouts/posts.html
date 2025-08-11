@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% if page.cover_image %}
-  <img src="{{ page.cover_image | relative_url }}" alt="Cover image" style="width:100%; height:auto; margin-bottom: 1rem;" />
+  <img src="{{ page.cover_image | relative_url }}" alt="Cover image" />
 {% endif %}
 
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
