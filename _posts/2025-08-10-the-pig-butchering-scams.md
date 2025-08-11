@@ -3,7 +3,7 @@ layout: post
 title: "Pig Butchering Scams"
 date: 2025-08-10 14:37:05
 categories: social-engineering
-# cover_image: assets\images\pig-butchering-scams.jpg
+author: Dan.C
 tags: [social-engineering, scam, fraud, awerness, cybersecurity, crypto]
 ---
 ![Cover Image](/assets/images/pig-butchering-scams.jpg)
