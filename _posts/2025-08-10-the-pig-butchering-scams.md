@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pig Butchering Scams"
-date: 2025-08-10 14:37:05
+date: 2025-08-10
 categories: social-engineering
 author: Dan.C
 tags: [social-engineering, scam, fraud, awerness, cybersecurity, crypto]
