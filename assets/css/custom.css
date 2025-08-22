@@ -1,4 +1,4 @@
-/* Base dark mode styles */
+/* Base dark mode styles
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #121212;
@@ -21,4 +21,3 @@
   img {
     filter: brightness(0.9) contrast(1.1);
   }
-}
