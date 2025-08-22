@@ -5,6 +5,8 @@ date: 2025-08-21
 categories: terraform
 author: Dan.C
 tags: [terraform, iac, devsecops, cloud-security, aws, infrastructure-as-code]
+excerpt: "A focused guide on securing Terraform infrastructure-as-code, covering state file protection, least privilege, secrets management, and guardrail automation"
+cover: /assets/images/terraform-security-best-practice.jpg
 ---
 
 ![Cover Image](/assets/images/terraform-security-best-practice.jpg)
