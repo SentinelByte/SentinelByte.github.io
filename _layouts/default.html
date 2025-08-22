@@ -4,12 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
   </head>
   <body>
     <div class="wrapper">
       <header class="sidebar">
-        <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+        <h1><a href="{{ '/'' | relative_url }}">{{ site.title }}</a></h1>
         <p>{{ site.description }}</p>
 
         {% if site.github_username %}
@@ -17,15 +18,15 @@
         {% endif %}
 
         <!-- Project Image -->
-        <img src="{{ "assets/images/SentinelByte-logo.jpg" | relative_url }}" alt="Project Logo" style="border-radius: 50%; width: 250px; height: 250px;">
+        <img src="{{ 'assets/images/SentinelByte-logo.jpg' | relative_url }}" alt="Project Logo" style="border-radius: 50%; width: 250px; height: 250px;">
 
 
         <!-- Navigation Menu -->
         <nav>
           <ul style="list-style: none; padding-left: 0;">
-            <li><a href="{{ "/" | relative_url }}">Home</a></li>
+            <li><a href="{{ '/'' | relative_url }}">Home</a></li>
             <!-- <li><a href="{{ "/docs/" | relative_url }}">Docs</a></li> -->
-            <li><a href="{{ "/blog/" | relative_url }}">Blog</a></li>
+            <li><a href="{{ '/blog/'' | relative_url }}">Blog</a></li>
             <!-- <li><a href="{{ "/about/" | relative_url }}">About</a></li> -->
           </ul>
         </nav>
