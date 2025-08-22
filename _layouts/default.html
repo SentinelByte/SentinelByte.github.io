@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="sidebar">
+        <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+        <p>{{ site.description }}</p>
+
+        {% if site.github_username %}
+          <p><a href="https://github.com/{{ site.github_username }}">View on GitHub</a></p>
+        {% endif %}
+
+        <!-- Project Image -->
+        <img src="{{ "assets/images/SentinelByte-logo.jpg" | relative_url }}" alt="Project Logo" style="max-width: 100%; margin: 20px 0;" />
+
+        <!-- Navigation Menu -->
+        <nav>
+          <ul style="list-style: none; padding-left: 0;">
+            <li><a href="{{ "/" | relative_url }}">Home</a></li>
+            <!-- <li><a href="{{ "/docs/" | relative_url }}">Docs</a></li> -->
+            <li><a href="{{ "/blog/" | relative_url }}">Blog</a></li>
+            <!-- <li><a href="{{ "/about/" | relative_url }}">About</a></li> -->
+          </ul>
+        </nav>
+      </header>
+
+      <section class="content">
+        {{ content }}
+      </section>
+    </div>
+  </body>
+</html>
