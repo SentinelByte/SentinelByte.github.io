@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Master Terraform Fast - Guide + Cheat Sheet"
-date: 2025-08-21
+date: 2025-08-28
 categories: terraform
 author: Dan.C
 tags: ["terraform", "infrastructure-as-code", "iac", "devops", "cloud", "aws", "automation", "infrastructure", "cloud-computing", "cheat-sheet", "tutorial", "beginners-guide"]
