@@ -117,8 +117,8 @@ Want more? I’ll soon publish a secure AWS Terraform project template with buil
 
 **You may also like:**
 
-* [AWS IAM Security Architecture for Terraform Users](/aws/terraform-iam-best-practices)
-* [Secrets Management for IaC Pipelines](/devsecops/terraform-secrets-management)
+* [Linux commands cheat Sheat](_posts\2025-08-11-linux-commands-cheatsheet.md)
+* [Master TF fast - Guide + Cheat Sheet](_posts\2025-08-28-master terraform-fast.md)
 
 ---
 

@@ -6,17 +6,17 @@ categories: terraform
 author: Dan.C
 tags: ["terraform", "infrastructure-as-code", "iac", "devops", "cloud", "aws", "automation", "infrastructure", "cloud-computing", "cheat-sheet", "tutorial", "beginners-guide"]
 excerpt: "Learn Terraform from scratch with this beginner-friendly guide. Step through setup, key concepts, and practical examples—plus grab the ultimate command cheat sheet."
-cover: /assets/images/terraform-security-best-practice.jpg
+cover: /assets/images/terraform-from-0-to-hero.png
 ---
-![Cover Image](/assets/images/terraform-security-best-practice.jpg)
+![Cover Image](/assets/images/terraform-from-0-to-hero.png)
 
-# Terraform From 0 to Hero + Complete Commands Cheat Sheet
+# Terraform From zero to Hero + Complete Commands Cheat Sheet
 
 If you’ve ever manually clicked through a cloud console to create servers, databases, or networks, you know it can get messy fast. What if you need to replicate the same environment tomorrow—or share it with your team? That’s where **Terraform** comes in.
 
 This post is your **from zero to hero guide**:
 
-* We’ll explain what Terraform is, why it’s important, and how it works.
+* I’ll explain what Terraform is, why it’s important, and how it works.
 * Walk step by step through writing and applying your first configuration.
 * Cover intermediate concepts like variables, outputs, state, and modules.
 * Wrap up with a **complete cheat sheet** you can use every day.
@@ -291,3 +291,16 @@ TF_LOG=TRACE terraform apply            # Very detailed logs
 Terraform is a powerful tool for managing infrastructure consistently and safely. The learning curve may feel steep at first, but once you understand the **workflow (init → plan → apply → destroy)** and how state files work, it becomes second nature.
 
 Start small (like creating a single bucket or VM), then explore **variables, modules, and remote state** as you grow more confident. And whenever you forget a command—come back to the cheat sheet above.
+
+
+**You may also like:**
+
+* [Linux commands cheat Sheat](_posts\2025-08-11-linux-commands-cheatsheet.md)
+* [TF Security Best Practice](_posts\2025-08-21-terraform-security-best-practice.md)
+
+---
+
+*Keep learning, stay inovative.*
+— Dan.C
+
+```
