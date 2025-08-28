@@ -6,9 +6,10 @@ categories: terraform
 author: Dan.C
 tags: ["terraform", "infrastructure-as-code", "iac", "devops", "cloud", "aws", "automation", "infrastructure", "cloud-computing", "cheat-sheet", "tutorial", "beginners-guide"]
 excerpt: "Learn Terraform from scratch with this beginner-friendly guide. Step through setup, key concepts, and practical examples—plus grab the ultimate command cheat sheet."
-cover: /assets/images/terraform-from-0-to-hero.png
+cover: /assets/images/tf-from-0-to-hero.png
 ---
-![Cover Image](/assets/images/terraform-from-0-to-hero.png)
+![Cover Image](/assets/images/tf-from-0-to-hero.png)
+
 
 # Terraform From zero to Hero + Complete Commands Cheat Sheet
 
