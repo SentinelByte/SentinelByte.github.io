@@ -12,6 +12,21 @@ cover: /assets/images/pig-butchering-scams.jpg
 
 # The Growing Threat of “Pig Butchering” Scams: A Deep Dive into a Sophisticated Fraud
 
+## Table of Contents
+1. [Introduction](#the-growing-threat-of-pig-butchering-scams-a-deep-dive-into-a-sophisticated-fraud)  
+2. [How the Scam Works](#how-the-scam-works)  
+   - [Initial Contact](#1-initial-contact)  
+   - [Grooming and Trust-Building](#2-grooming-and-trust-building)  
+   - [Fake Investment Platforms](#3-fake-investment-platforms)  
+   - [The Exit and Financial Drain](#4-the-exit-and-financial-drain)  
+3. [Warning Signs to Watch For](#warning-signs-to-watch-for)  
+4. [How to Protect Yourself](#how-to-protect-yourself)  
+5. [The Darker Side: Human Exploitation Behind the Scenes](#the-darker-side-human-exploitation-behind-the-scenes)  
+6. [What Can We Do?](#what-can-we-do)  
+7. [Conclusion](#conclusion)  
+
+---
+
 In the fast-paced, ever-evolving world of cybercrime, few scams have grown as dangerous and insidious as the so-called **“Pig Butchering Scam.”** This scam is a sophisticated blend of social engineering, fake investment platforms, and cryptocurrency fraud, designed to fatten victims financially before ruthlessly draining their assets.
 
 # Table of Contents

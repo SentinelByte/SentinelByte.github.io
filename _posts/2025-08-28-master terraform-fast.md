@@ -14,6 +14,38 @@ cover: /assets/images/tf-from-0-to-hero.png
 
 If you’ve ever manually clicked through a cloud console to create servers, databases, or networks, you know it can get messy fast. What if you need to replicate the same environment tomorrow—or share it with your team? That’s where **Terraform** comes in.
 
+## Table of Contents
+1. [Terraform From Zero to Hero + Complete Commands Cheat Sheet](#terraform-from-zero-to-hero--complete-commands-cheat-sheet)  
+2. [What is Terraform (and why should you care)?](#-what-is-terraform-and-why-should-you-care)  
+   - [Example Analogy](#example-analogy)  
+3. [How Terraform Works (The 4-Step Workflow)](#-how-terraform-works-the-4-step-workflow)  
+4. [Getting Started with Terraform](#-getting-started-with-terraform)  
+   - [Step 1. Install Terraform](#step-1-install-terraform)  
+   - [Step 2. Set Up Your First Project](#step-2-set-up-your-first-project)  
+   - [Step 3. Initialize Terraform](#step-3-initialize-terraform)  
+   - [Step 4. Validate Configuration](#step-4-validate-configuration)  
+   - [Step 5. Preview the Execution Plan](#step-5-preview-the-execution-plan)  
+   - [Step 6. Apply the Plan](#step-6-apply-the-plan)  
+   - [Step 7. Destroy Infrastructure](#step-7-destroy-infrastructure)  
+5. [Going Deeper: Key Terraform Concepts](#-going-deeper-key-terraform-concepts)  
+   - [Variables](#1-variables)  
+   - [Outputs](#2-outputs)  
+   - [State Management](#3-state-management)  
+   - [Modules](#4-modules)  
+   - [Workspaces](#5-workspaces)  
+6. [Terraform Commands Cheat Sheet](#-terraform-commands-cheat-sheet)  
+   - [Initialization & Setup](#initialization--setup)  
+   - [Core Workflow](#core-workflow)  
+   - [State Management](#state-management)  
+   - [Variables & Outputs](#variables--outputs)  
+   - [Workspaces](#workspaces)  
+   - [Debugging & Logs](#debugging--logs)  
+7. [Final Thoughts](#-final-thoughts)  
+8. [You may also like](#you-may-also-like)  
+9. [Conclusion](#conclusion)
+
+---
+
 This post is your **from zero to hero guide**:
 
 * I’ll explain what Terraform is, why it’s important, and how it works.
