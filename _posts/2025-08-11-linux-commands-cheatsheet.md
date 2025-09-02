@@ -14,6 +14,22 @@ cover: /assets/images/linux-cheatsheet.jpg
 
 A curated reference guide to the most essential Linux commands — ideal for system administrators, developers, DevOps engineers, and cybersecurity professionals. Whether you're a beginner or brushing up your skills, this categorized cheat sheet will help streamline your command-line workflow.
 
+## Table of Contents
+1. [Introduction](#-linux-command-cheat-sheet)  
+2. [File and Directory Operations](#-file-and-directory-operations)  
+3. [Viewing & Editing Files](#️-viewing--editing-files)  
+4. [Permissions & Ownership](#-permissions--ownership)  
+5. [System Information](#-system-information)  
+6. [User & Process Management](#-user--process-management)  
+7. [Networking Commands](#-networking-commands)  
+8. [Package Management](#-package-management)  
+   - [Debian/Ubuntu (APT)](#-debianubuntu-apt)  
+   - [Red Hat/CentOS (YUM/DNF)](#-red-hatcentos-yumdnf)  
+9. [Searching Files](#-searching-files)  
+10. [Keyboard Shortcuts & History](#-keyboard-shortcuts--history)  
+11. [Notes](#-notes)  
+12. [Conclusion](#conclusion)  
+
 ---
 
 ## 🔍 File and Directory Operations

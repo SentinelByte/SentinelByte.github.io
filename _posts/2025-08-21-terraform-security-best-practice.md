@@ -8,8 +8,24 @@ tags: [terraform, iac, devsecops, cloud-security, aws, infrastructure-as-code]
 excerpt: "A focused guide on securing Terraform infrastructure-as-code, covering state file protection, least privilege, secrets management, and guardrail automation"
 cover: /assets/images/terraform-security-best-practice.jpg
 ---
-
 ![Cover Image](/assets/images/terraform-security-best-practice.jpg)
+
+# Terraform Security Best Practices: Protecting Infrastructure-as-Code from Risks 
+
+## Table of Contents
+1. [Why Terraform Security Matters](#-why-terraform-security-matters)  
+2. [Use Least Privilege IAM for Terraform](#-1-use-least-privilege-iam-for-terraform)  
+3. [Secure Terraform State Files](#-2-secure-terraform-state-files)  
+4. [Scan Terraform Code for Vulnerabilities](#-3-scan-terraform-code-for-vulnerabilities)  
+5. [Isolate Environments](#-4-isolate-environments)  
+6. [Never Hardcode Secrets](#-5-never-hardcode-secrets)  
+7. [Harden Your Terraform Modules](#-6-harden-your-terraform-modules)  
+8. [Review Changes Before Applying](#-7-review-changes-before-applying)  
+9. [Final Thoughts](#-final-thoughts)  
+10. [You may also like](#you-may-also-like)  
+11. [Conclusion](#conclusion)  
+
+---
 
 ## 🔒 Why Terraform Security Matters
 
