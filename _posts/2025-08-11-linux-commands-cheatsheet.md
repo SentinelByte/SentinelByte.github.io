@@ -14,6 +14,7 @@ cover: /assets/images/linux-cheatsheet.jpg
 
 A curated reference guide to the most essential Linux commands — ideal for system administrators, developers, DevOps engineers, and cybersecurity professionals. Whether you're a beginner or brushing up your skills, this categorized cheat sheet will help streamline your command-line workflow.
 
+
 ## Table of Contents
 1. [Introduction](#-linux-command-cheat-sheet)  
 2. [File and Directory Operations](#-file-and-directory-operations)  
@@ -28,7 +29,6 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 9. [Searching Files](#-searching-files)  
 10. [Keyboard Shortcuts & History](#-keyboard-shortcuts--history)  
 11. [Notes](#-notes)  
-12. [Conclusion](#conclusion)  
 
 ---
 

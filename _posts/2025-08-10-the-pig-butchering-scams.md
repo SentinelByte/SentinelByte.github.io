@@ -29,6 +29,23 @@ cover: /assets/images/pig-butchering-scams.jpg
 
 In the fast-paced, ever-evolving world of cybercrime, few scams have grown as dangerous and insidious as the so-called **“Pig Butchering Scam.”** This scam is a sophisticated blend of social engineering, fake investment platforms, and cryptocurrency fraud, designed to fatten victims financially before ruthlessly draining their assets.
 
+# Table of Contents
+
+- [How the Scam Works](#how-the-scam-works)
+  - [1. Initial Contact](#1-initial-contact)
+  - [2. Grooming and Trust-Building](#2-grooming-and-trust-building)
+  - [3. Fake Investment Platforms](#3-fake-investment-platforms)
+  - [4. The Exit and Financial Drain](#4-the-exit-and-financial-drain)
+- [Warning Signs to Watch For](#warning-signs-to-watch-for)
+- [How to Protect Yourself](#how-to-protect-yourself)
+- [The Darker Side: Human Exploitation Behind the Scenes](#the-darker-side-human-exploitation-behind-the-scenes)
+  - [Kidnapping and Coercion](#kidnapping-and-coercion)
+  - [Life in Captivity](#life-in-captivity)
+  - [Why Target Educated Individuals?](#why-target-educated-individuals)
+- [What Can We Do?](#what-can-we-do)
+
+---
+
 ## How the Scam Works
 
 ### 1. Initial Contact
