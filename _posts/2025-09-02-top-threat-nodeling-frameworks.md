@@ -10,21 +10,22 @@ cover: /assets/images/cyberThreatModeling.jpg
 ---
 ![Cover Image](/assets/images/cyberThreatModeling.jpg)
 
-
 # Threat Modeling Frameworks (STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC)
 
-## Table of Contents
-1. [Introduction](#introduction)
-2. [What is Threat Modeling?](#what-is-threat-modeling)
-3. [Frameworks Deep Dive](#frameworks-deep-dive)  
-   - [STRIDE](#stride)  
-   - [MITRE ATT&CK](#mitre-attck)  
-   - [PASTA](#pasta)  
-   - [CVSS](#cvss)  
-   - [TMaaC](#tmaac)  
-4. [Comparison Table](#comparison-table)
-5. [Bringing It All Together](#bringing-it-all-together)
-6. [Conclusion](#conclusion)
+# Table of Contents
+
+- [Introduction](#introduction)
+- [What is Threat Modeling?](#what-is-threat-modeling)
+- [Frameworks Deep Dive](#frameworks-deep-dive)
+  - [STRIDE](#stride)
+  - [MITRE ATT&CK](#mitre-attack)
+  - [PASTA (Process for Attack Simulation and Threat Analysis)](#pasta-process-for-attack-simulation-and-threat-analysis)
+  - [CVSS (Common Vulnerability Scoring System)](#cvss-common-vulnerability-scoring-system)
+  - [TMaaC (Threat Modeling as Code)](#tmaac-threat-modeling-as-code)
+- [Comparison Table](#comparison-table)
+- [Bringing It All Together](#bringing-it-all-together)
+- [Conclusion](#conclusion)
+- [You May Also Like](#you-may-also-like)
 
 ---
 
