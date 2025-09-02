@@ -31,7 +31,7 @@ Based in Germany
 
 ## ✍️ Latest Posts
 
-Check out the latest posts on [SentinelByte's Blog »](/blog/) for blog posts, write-ups, and field reports on topics ranging from:
+Check out the latest posts on [**SentinelByte's Blog »**](/blog/) for up to date cyber security blog posts, tech cheat sheets, write-ups & news, and field reports on topics ranging from:
 
 ### 🔎 Investigative & Field Topics
 - Cybersecurity threats and modern scam breakdowns  
@@ -41,10 +41,10 @@ Check out the latest posts on [SentinelByte's Blog »](/blog/) for blog posts, w
 - Building and defending multi-agent systems (MAS)
 
 ### 🌱 Evergreen Resources
-- **Linux Command Cheat Sheets**  
-- **Terraform Security Best Practices**  
+- [**Linux Command Cheat Sheets**](_posts\2025-08-11-linux-commands-cheatsheet.md)
+- [**Terraform Security Best Practices**](_posts\2025-08-21-terraform-security-best-practice.md)
 - **Python Scripting Templates for Security Engineers**  
-- **Threat Modeling Frameworks (STRIDE, DREAD, MITRE ATT&CK)**  
+- **Threat Modeling Frameworks (STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC)**  
 - **DevSecOps: CI/CD Pipeline Hardening**
 
 ---
