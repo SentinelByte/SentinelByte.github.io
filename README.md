@@ -41,11 +41,11 @@ Check out the latest posts on [**SentinelByte's Blog »**](/blog/) for up to dat
 - Building and defending multi-agent systems (MAS)
 
 ### 🌱 Evergreen Resources
-- [**Linux Command Cheat Sheets**](_posts\2025-08-11-linux-commands-cheatsheet.md)
-- [**Terraform Security Best Practices**](_posts\2025-08-21-terraform-security-best-practice.md)
-- **Python Scripting Templates for Security Engineers**  
-- **Threat Modeling Frameworks (STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC)**  
-- **DevSecOps: CI/CD Pipeline Hardening**
+- [Linux Command Cheat Sheets](https://sentinelbyte.github.io/linux/linux-commands-cheatsheet/)
+- [Terraform Security Best Practices**](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
+- Python Scripting Templates for Security Engineers  
+- Threat Modeling Frameworks (STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC)
+- DevSecOps: CI/CD Pipeline Hardening
 
 ---
 
