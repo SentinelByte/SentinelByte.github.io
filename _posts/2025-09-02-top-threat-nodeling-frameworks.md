@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Threat Modeling Frameworks Explained: STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC"
+title: "Top Threat Modeling Frameworks"
 date: 2025-09-02
 categories: [Cybersecurity, Threat Modeling]
 author: Dan.C
@@ -10,8 +10,7 @@ cover: /assets/images/cyberThreatModeling.jpg
 ---
 ![Cover Image](/assets/images/cyberThreatModeling.jpg)
 
-
-# Threat Modeling Frameworks (STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC)
+# Threat Modeling Frameworks Explained: STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -28,7 +27,7 @@ cover: /assets/images/cyberThreatModeling.jpg
 
 ---
 
-## Introduction
+## Introduction to Threat Modeling
 Imagine you’re building a banking app. You’ve encrypted passwords, secured the database, and applied patches. But have you really thought like an attacker? What if someone tries to spoof a user, escalate privileges, or exploit an overlooked vulnerability?  
 
 That’s where **threat modeling frameworks** come in. They give security teams structured ways to anticipate, prioritize, and mitigate threats—long before attackers exploit them. In this guide, we’ll explore the most widely used frameworks: **STRIDE, MITRE ATT&CK, PASTA, CVSS, and TMaaC.**
@@ -44,7 +43,7 @@ Different frameworks provide **different perspectives**: some focus on attacker 
 
 ---
 
-## Frameworks Deep Dive
+## Threat Modeling Frameworks Deep Dive
 
 ### STRIDE
 - **Purpose:** Identify different categories of threats.  
@@ -86,7 +85,7 @@ Different frameworks provide **different perspectives**: some focus on attacker 
 
 ---
 
-## Comparison Table
+## Frameworks Comparison
 
 | Framework   | Goal                        | Strength              | Best For          | Example Use Case              |
 |-------------|-----------------------------|-----------------------|------------------|-------------------------------|
@@ -98,7 +97,7 @@ Different frameworks provide **different perspectives**: some focus on attacker 
 
 ---
 
-## Bringing It All Together
+## Bringing All Together
 No single framework solves everything. Instead, they **complement each other**:  
 - Use **STRIDE** during design.  
 - Use **CVSS** to prioritize vulnerabilities.  
