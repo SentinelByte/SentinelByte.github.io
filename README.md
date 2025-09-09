@@ -44,7 +44,7 @@ Check out the latest posts on [**SentinelByte's Blog »**](/blog/) for up to dat
 - [Linux Command Cheat Sheets](https://sentinelbyte.github.io/linux/linux-commands-cheatsheet/)
 - [Terraform Security Best Practices**](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
 - Python Scripting Templates for Security Engineers  
-- Threat Modeling Frameworks (STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC)
+- [Threat Modeling Frameworks - STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC](https://sentinelbyte.github.io/cybersecurity/threat%20modeling/top-threat-nodeling-frameworks/)
 - DevSecOps: CI/CD Pipeline Hardening
 
 ---
