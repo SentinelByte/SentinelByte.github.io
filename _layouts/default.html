@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <!-- <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}"> -->
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="sidebar" style="text-align:center;">
+  <div class="wrapper" style="display:flex; min-height:100vh;">
+
+    <!-- Left Sidebar -->
+    <aside class="sidebar" style="width:300px; padding:20px; box-sizing:border-box; text-align:center;">
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
 
@@ -21,33 +22,52 @@
 
       <!-- Project Image -->
       <img src="{{ 'assets/images/SentinelByte-logo.jpg' | relative_url }}" alt="Project Logo"
-        style="border-radius: 50%; width: 250px; height: 250px; margin: 20px 0;">
+        style="border-radius:50%; width:250px; height:250px; margin:20px 0;">
 
-      <!-- Navigation Menu -->
-      <nav>
-        <ul style="list-style: none; padding-left: 0; display:flex; justify-content:center; gap:20px;">
-          <li><a href="{{ '/' | relative_url }}">Home</a></li>
-          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+      <!-- Navigation Buttons -->
+      <nav style="margin-bottom:20px;">
+        <ul style="list-style:none; padding:0;">
+          <li style="margin:4px 0;">
+            <a href="{{ '/' | relative_url }}" style="
+                display:inline-block;
+                background-color:black;
+                color:white;
+                padding:8px 16px;
+                border-radius:5px;
+                text-decoration:none;
+                font-weight:600;
+                transition: background-color 0.3s;
+            " onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='black';">Home</a>
+          </li>
+          <li style="margin:4px 0;">
+            <a href="{{ '/blog/' | relative_url }}" style="
+                display:inline-block;
+                background-color:black;
+                color:white;
+                padding:8px 16px;
+                border-radius:5px;
+                text-decoration:none;
+                font-weight:600;
+                transition: background-color 0.3s;
+            " onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='black';">Blog</a>
+          </li>
         </ul>
       </nav>
-    </header>
-
-    <section class="content" style="text-align:center; margin: 0 auto; max-width: 800px;">
 
       <!-- Category Buttons -->
       {% if page.categories %}
-      <div style="text-align:center; margin-bottom: 20px;">
+      <div style="margin-bottom:20px;">
         {% for category in page.categories %}
         <a href="/{{ category | slugify }}/" style="
-            display: inline-block;
-            background-color: black;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 4px;
-            font-weight: 600;
-            font-size: 0.9rem;
+            display:inline-block;
+            background-color:black;
+            color:white;
+            padding:8px 16px;
+            border-radius:5px;
+            text-decoration:none;
+            margin:4px;
+            font-weight:600;
+            font-size:0.9rem;
             transition: background-color 0.3s;
         "
         onmouseover="this.style.backgroundColor='#333';"
@@ -58,11 +78,8 @@
       </div>
       {% endif %}
 
-      <!-- Page/Post Content -->
-      {{ content }}
-
       <!-- SentinelByte Blog Button -->
-      <div style="margin-top: 40px;">
+      <div style="margin-top:20px;">
         <a href="/blog/" style="
             display:inline-block;
             background-color:black;
@@ -78,8 +95,13 @@
           Check out the latest posts on SentinelByte's Blog »
         </a>
       </div>
+    </aside>
 
-    </section>
+    <!-- Right Content Pane -->
+    <main class="content" style="flex:1; padding:40px; box-sizing:border-box; text-align:left;">
+      {{ content }}
+    </main>
+
   </div>
 </body>
 
