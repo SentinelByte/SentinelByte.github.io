@@ -1,40 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <!-- <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}"> -->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="sidebar">
-        <h1><a href="{{ '/'' | relative_url }}">{{ site.title }}</a></h1>
-        <p>{{ site.description }}</p>
 
-        {% if site.github_username %}
-          <p><a href="https://github.com/{{ site.github_username }}">View on GitHub</a></p>
-        {% endif %}
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}"> -->
+</head>
 
-        <!-- Project Image -->
-        <img src="{{ 'assets/images/SentinelByte-logo.jpg' | relative_url }}" alt="Project Logo" style="border-radius: 50%; width: 250px; height: 250px;">
+<body>
+  <div class="wrapper">
+    <header class="sidebar" style="text-align:center;">
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <p>{{ site.description }}</p>
 
+      {% if site.github_username %}
+      <p><a href="https://github.com/{{ site.github_username }}">View on GitHub</a></p>
+      {% endif %}
 
-        <!-- Navigation Menu -->
-        <nav>
-          <ul style="list-style: none; padding-left: 0;">
-            <li><a href="{{ '/'' | relative_url }}">Home</a></li>
-            <!-- <li><a href="{{ "/docs/" | relative_url }}">Docs</a></li> -->
-            <li><a href="{{ '/blog/'' | relative_url }}">Blog</a></li>
-            <!-- <li><a href="{{ "/about/" | relative_url }}">About</a></li> -->
-          </ul>
-        </nav>
-      </header>
+      <!-- Project Image -->
+      <img src="{{ 'assets/images/SentinelByte-logo.jpg' | relative_url }}" alt="Project Logo"
+        style="border-radius: 50%; width: 250px; height: 250px; margin: 20px 0;">
 
-      <section class="content">
-        {{ content }}
-      </section>
-    </div>
-  </body>
+      <!-- Navigation Menu -->
+      <nav>
+        <ul style="list-style: none; padding-left: 0; display:flex; justify-content:center; gap:20px;">
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="content" style="text-align:center; margin: 0 auto; max-width: 800px;">
+
+      <!-- Category Buttons -->
+      {% if page.categories %}
+      <div style="text-align:center; margin-bottom: 20px;">
+        {% for category in page.categories %}
+        <a href="/{{ category | slugify }}/" style="
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 4px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        "
+        onmouseover="this.style.backgroundColor='#333';"
+        onmouseout="this.style.backgroundColor='black';">
+          {{ category }}
+        </a>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      <!-- Page/Post Content -->
+      {{ content }}
+
+      <!-- SentinelByte Blog Button -->
+      <div style="margin-top: 40px;">
+        <a href="/blog/" style="
+            display:inline-block;
+            background-color:black;
+            color:white;
+            padding:10px 20px;
+            border-radius:5px;
+            font-weight:600;
+            text-decoration:none;
+            transition: background-color 0.3s;
+        "
+        onmouseover="this.style.backgroundColor='#333';"
+        onmouseout="this.style.backgroundColor='black';">
+          Check out the latest posts on SentinelByte's Blog »
+        </a>
+      </div>
+
+    </section>
+  </div>
+</body>
+
 </html>
