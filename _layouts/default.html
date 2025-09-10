@@ -72,6 +72,7 @@
 
       .sidebar {
         width: 100%;
+        margin-bottom: 20px;
       }
 
       .content {
@@ -118,8 +119,8 @@
         </ul>
       </nav>
 
-      <!-- Category Buttons -->
-      {% if page.categories %}
+      <!-- Category Buttons (only show if front matter show_categories is true) -->
+      {% if page.show_categories and page.categories %}
       <div style="margin-bottom:20px;">
         {% for category in page.categories %}
         <a class="category-button" href="/{{ category | slugify }}/">
