@@ -6,10 +6,10 @@ categories: [DevSecOps, CI/CD, GitHub Security]
 author: Dan.C
 tags: [github, devsecops, access-control, secrets-management, org-security, ci-cd]
 excerpt: "Hands-on guide for engineers to implement secure GitHub organizational access & secrets mgmt at scale."
-cover: /assets/images/github-access-control.jpg
+cover: /assets/images/github-access-control.png
 ---
 
-![Cover Image](/assets/images/github-access-control.jpg)
+![Cover Image](/assets/images/github-access-control.png)
 
 # GitHub Organizational Access and Secrets Management: Hardening at Scale
 
@@ -38,19 +38,58 @@ This post provides practical best practices with **real CLI, API, and Terraform 
 
 ## What is Access Control in GitHub Organizations?
 
-Access control defines **who can do what** in your GitHub organization.  
+At its core, **access control** is about answering one simple question:
 
-Key building blocks:
-- **Organization roles**: Owners (full control), Members (default), Security Managers (security-focused privileges), Billing Managers. Use Owners sparingly.  
-- **Teams**: Group members logically (by product, function, or environment) and delegate access via team permissions.  
-- **Repository permissions**: Fine-grained roles (read, triage, write, maintain, admin).  
-- **Outside collaborators**: Direct access to repos without org membership — monitor closely.  
-- **Machine identities**: GitHub Apps, fine-grained PATs, and Actions `GITHUB_TOKEN`. Prefer GitHub Apps or OIDC-based workflows over PATs.
+👉 *“Who is allowed to do what inside my GitHub organization?”*
 
-**Anti-patterns to avoid**:
-- Giving every team `write` access.  
-- Using classic PATs with broad scopes.  
-- Relying on private repos to “hide” secrets.  
+GitHub provides multiple layers of access control that work together. Think of it like doors in a building — some people can only enter the lobby, some can access specific floors, and only a few hold the master keys.
+
+### 🔑 Key Building Blocks
+
+* **Organization Roles**
+
+  * **Owner** → Full control over everything (like a root account). Use sparingly.
+  * **Member** → Default role for most developers. Can only access what they’re explicitly given.
+  * **Security Manager** → Focused on security settings (e.g., reviewing alerts, managing security policies).
+  * **Billing Manager** → Handles payments and billing, no code access.
+
+* **Teams**
+
+  * Group members logically (by project, product, function, or environment).
+  * Assign repository permissions at the *team level* rather than per individual.
+  * Example: a **DevOps team** with write access to CI/CD repos, and a **Security team** with admin access only where needed.
+
+* **Repository Permissions**
+  Each repo has fine-grained roles:
+
+  * **Read** → View only.
+  * **Triage** → Manage issues/PRs without changing code.
+  * **Write** → Push commits, merge PRs.
+  * **Maintain** → Manage repo settings without full admin.
+  * **Admin** → Full control over the repository.
+
+* **Outside Collaborators**
+
+  * Non-members who get access to specific repositories.
+  * Useful for contractors, but risky if unmanaged.
+  * Best practice: limit and review regularly.
+
+* **Machine Identities**
+
+  * **GitHub Apps** → Best for automation; scoped to specific repos/orgs.
+  * **Fine-grained PATs (Personal Access Tokens)** → Safer than classic PATs; scope down to minimum rights.
+  * **Actions GITHUB\_TOKEN** → Auto-generated per workflow run; safest for CI/CD.
+  * **OIDC (OpenID Connect)** → Recommended for connecting GitHub Actions to cloud providers without storing secrets.
+
+---
+
+### 🚫 Common Anti-Patterns (What NOT to Do)
+
+* Giving every team **Write** access “just in case.”
+* Using **classic PATs with broad scopes** instead of fine-grained tokens or OIDC.
+* Assuming **private repos hide secrets** — secrets should never be in code.
+* Making too many **Owners** instead of limiting to a small, trusted set.
+* Leaving **outside collaborators** with lingering repo access after contracts end.
 
 ---
 
