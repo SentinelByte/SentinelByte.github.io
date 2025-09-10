@@ -52,13 +52,13 @@ Based in Germany
 - Protocol design and orchestration with MCP  
 - Building and defending multi-agent systems (MAS)
 
-### 🌱 Evergreen Resources
+### 🌱 Evergreen Tech Playbooks & Resources
 - [Linux Command Cheat Sheets](https://sentinelbyte.github.io/linux/linux-commands-cheatsheet/)
 - [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
 - Python Scripting Templates for Security Engineers  
-- [Threat Modeling Frameworks - STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC](https://sentinelbyte.github.io/cybersecurity/threat%20modeling/top-threat-nodeling-frameworks/)
+- [Threat Modeling Frameworks](https://sentinelbyte.github.io/threat-modeling/top-threat-nodeling-frameworks/)
 - CI/CD Pipeline Hardening
-- [GithHub Access Control](https://sentinelbyte.github.io/threat%20modeling/top-threat-nodeling-frameworks/)
+- [GithHub Access Control](https://sentinelbyte.github.io/devsecops/granular-github-orgs-access-control/)
 
 ---
 
