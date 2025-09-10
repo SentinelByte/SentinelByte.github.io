@@ -6,13 +6,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <style>
+    /* Desktop flex layout */
+    .wrapper {
+      display: flex;
+      min-height: 100vh;
+      flex-wrap: nowrap;
+    }
+
+    .sidebar {
+      width: 300px;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .content {
+      flex: 1;
+      padding: 40px;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    /* Sidebar nav buttons */
+    .sidebar nav ul li a {
+      display: inline-block;
+      width: 100%;
+      background-color: black;
+      color: white;
+      padding: 10px 0;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar nav ul li a:hover {
+      background-color: #333;
+    }
+
+    /* Category buttons */
+    .sidebar .category-button {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 4px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background-color 0.3s;
+    }
+
+    .sidebar .category-button:hover {
+      background-color: #333;
+    }
+
+    /* Responsive: stack on mobile */
+    @media screen and (max-width: 768px) {
+      .wrapper {
+        display: block;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+
+      .content {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .sidebar nav ul li a {
+        width: 100%;
+      }
+
+      .sidebar .category-button {
+        width: auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div class="wrapper" style="display:flex; min-height:100vh;">
+  <div class="wrapper">
 
-    <!-- Left Sidebar -->
-    <aside class="sidebar" style="width:300px; padding:20px; box-sizing:border-box; text-align:center;">
+    <!-- Sidebar -->
+    <aside class="sidebar">
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
 
@@ -26,30 +108,12 @@
 
       <!-- Navigation Buttons -->
       <nav style="margin-bottom:20px;">
-        <ul style="list-style:none; padding:0;">
+        <ul style="list-style:none; padding:0; margin:0;">
           <li style="margin:4px 0;">
-            <a href="{{ '/' | relative_url }}" style="
-                display:inline-block;
-                background-color:black;
-                color:white;
-                padding:8px 16px;
-                border-radius:5px;
-                text-decoration:none;
-                font-weight:600;
-                transition: background-color 0.3s;
-            " onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='black';">Home</a>
+            <a href="{{ '/' | relative_url }}">Home</a>
           </li>
           <li style="margin:4px 0;">
-            <a href="{{ '/blog/' | relative_url }}" style="
-                display:inline-block;
-                background-color:black;
-                color:white;
-                padding:8px 16px;
-                border-radius:5px;
-                text-decoration:none;
-                font-weight:600;
-                transition: background-color 0.3s;
-            " onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='black';">Blog</a>
+            <a href="{{ '/blog/' | relative_url }}">Blog</a>
           </li>
         </ul>
       </nav>
@@ -58,47 +122,16 @@
       {% if page.categories %}
       <div style="margin-bottom:20px;">
         {% for category in page.categories %}
-        <a href="/{{ category | slugify }}/" style="
-            display:inline-block;
-            background-color:black;
-            color:white;
-            padding:8px 16px;
-            border-radius:5px;
-            text-decoration:none;
-            margin:4px;
-            font-weight:600;
-            font-size:0.9rem;
-            transition: background-color 0.3s;
-        "
-        onmouseover="this.style.backgroundColor='#333';"
-        onmouseout="this.style.backgroundColor='black';">
+        <a class="category-button" href="/{{ category | slugify }}/">
           {{ category }}
         </a>
         {% endfor %}
       </div>
       {% endif %}
-
-      <!-- SentinelByte Blog Button -->
-      <div style="margin-top:20px;">
-        <a href="/blog/" style="
-            display:inline-block;
-            background-color:black;
-            color:white;
-            padding:10px 20px;
-            border-radius:5px;
-            font-weight:600;
-            text-decoration:none;
-            transition: background-color 0.3s;
-        "
-        onmouseover="this.style.backgroundColor='#333';"
-        onmouseout="this.style.backgroundColor='black';">
-          Check out the latest posts on SentinelByte's Blog »
-        </a>
-      </div>
     </aside>
 
-    <!-- Right Content Pane -->
-    <main class="content" style="flex:1; padding:40px; box-sizing:border-box; text-align:left;">
+    <!-- Content -->
+    <main class="content">
       {{ content }}
     </main>
 
