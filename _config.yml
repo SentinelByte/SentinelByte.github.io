@@ -3,14 +3,3 @@ theme: jekyll-theme-minimal
 title: SentinelByte - Tech Insights
 description: Technical content and hands-on guides on cybersecurity, automation, AI/ML, cloud, and more.
 permalink: /:categories/:title/
-
-# sass:
-#   style: compressed
-
-# # Include custom styles
-# defaults:
-#   -
-#     scope:
-#       path: ""
-#     values:
-#       css: "/assets/css/custom.css"
