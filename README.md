@@ -31,7 +31,19 @@ Based in Germany
 
 ## ✍️ Latest Posts
 
-Check out the latest posts on [**SentinelByte's Blog »**](/blog/) for up to date cyber security blog posts, tech cheat sheets, write-ups & news, and field reports on topics ranging from:
+<p>Check out the latest posts on SentinelByte's Blog for up-to-date cybersecurity content, tech cheat sheets, write-ups, news, and field reports on topics ranging from:</p>
+
+<a href="/blog/" style="
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+">
+    SentinelByte's Blog »
+</a>
 
 ### 🔎 Investigative & Field Topics
 - Cybersecurity threats and modern scam breakdowns  
@@ -42,10 +54,11 @@ Check out the latest posts on [**SentinelByte's Blog »**](/blog/) for up to dat
 
 ### 🌱 Evergreen Resources
 - [Linux Command Cheat Sheets](https://sentinelbyte.github.io/linux/linux-commands-cheatsheet/)
-- [Terraform Security Best Practices**](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
+- [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
 - Python Scripting Templates for Security Engineers  
 - [Threat Modeling Frameworks - STRIDE, MITRE ATT&CK, PASTA, CVSS, TMaaC](https://sentinelbyte.github.io/cybersecurity/threat%20modeling/top-threat-nodeling-frameworks/)
-- DevSecOps: CI/CD Pipeline Hardening
+- CI/CD Pipeline Hardening
+- [GithHub Access Control](https://sentinelbyte.github.io/threat%20modeling/top-threat-nodeling-frameworks/)
 
 ---
 
