@@ -2,7 +2,7 @@
 layout: post
 title: "Top Threat Modeling Frameworks"
 date: 2025-09-02
-categories: [Cybersecurity, Threat Modeling]
+categories: Threat-Modeling
 author: Dan.C
 tags: [threat-modeling, STRIDE, MITRE, PASTA, CVSS, TMaaC, security]
 excerpt: "A comprehensive beginner-friendly guide to the most important threat modeling frameworks in cybersecurity."
