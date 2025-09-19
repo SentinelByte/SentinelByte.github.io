@@ -57,7 +57,7 @@ Based in Germany
 - [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
 - Python Scripting Templates for Security Engineers  
 - [Threat Modeling Frameworks](https://sentinelbyte.github.io/threat-modeling/top-threat-nodeling-frameworks/)
-- CI/CD Pipeline Hardening
+- [CI/CD Pipeline Hardening](https://sentinelbyte.github.io/devsecops/cicd-pipline-hardening/)
 - [GithHub Access Control](https://sentinelbyte.github.io/devsecops/granular-github-orgs-access-control/)
 
 ---
