@@ -3,28 +3,27 @@ Security Engineer | Automation Enthusiast | Cloud Defender
 ---
 ## 🔍 About
 
-**SentinelByte** is a personal knowledge hub by **Dan Cohen Vaxman** — A Security Engineer. The Purpose here is to share knowledge, insights from past & present experience, focused on designing scalable, secure, and intelligent systems.
+**SentinelByte.io** is a personal knowledge hub by **Dan Cohen Vaxman** — A Security Engineer. The Purpose here is to share knowledge, insights from past & present experience. Focusing on designing scalable, secure, and intelligent systems.
 
 ---
 
 ## 🔎 Investigative domains & Field Topics
-### Cybersecurity & Threat Analysis
-🕵️‍♂️ Modern cyber threats and scam breakdowns
-🔗 Protocol design and orchestration with MCP
+### 🔗 Cybersecurity & Threat Analysis
+- Modern cyber threats and scam breakdowns
+- Protocol design and orchestration with MCP
 
-### Cloud & Automation
-☁️ Scaling security in cloud-native environments
-⚙️ Automation for security and operations
-🏛️ Cloud security architecture best practices
+### ☁️ Cloud & Automation
+- Scaling security in cloud-native environments
+- Automation for security and operations
+- Cloud security architecture best practices
 
-### Advanced Systems & Observability
-🤖 Building and defending multi-agent systems (MAS)
-🧠 Model Context Protocols (MCPs)
-📈 Monitoring, observability, and metrics
+### 🧠 Advanced Systems & Observability
+- Building and defending multi-agent systems (MAS)
+- Model Context Protocols (MCPs)
 
-### Security Engineering & Response
-🛡️ Incident Response (IR) strategies and playbooks
-🔐 Security engineering with Infrastructure as Code (IaC)
+### 🛡️ Security Engineering & Response
+- Incident Response (IR) strategies and playbooks
+- Security engineering with Infrastructure as Code (IaC)
 
 ### 🌱 Evergreen Tech Playbooks & Resources
 - [Linux Command Cheat Sheets](https://sentinelbyte.github.io/linux/linux-commands-cheatsheet/)
