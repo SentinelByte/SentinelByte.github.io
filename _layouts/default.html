@@ -96,6 +96,11 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
+      <!-- Project Image -->
+      <img src="{{ 'assets/images/SentinelByte-logo.jpg' | relative_url }}" alt="Project Logo"
+        style="border-radius:50%; width:150px; height:150px; margin:20px 0;">
+      
+      <!-- Project Title & Desc -->
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
 
@@ -103,9 +108,7 @@
       <p><a href="https://github.com/{{ site.github_username }}">View on GitHub</a></p>
       {% endif %}
 
-      <!-- Project Image -->
-      <img src="{{ 'assets/images/SentinelByte-logo.jpg' | relative_url }}" alt="Project Logo"
-        style="border-radius:50%; width:150px; height:150px; margin:20px 0;">
+
 
       <!-- Navigation Buttons -->
       <nav style="margin-bottom:20px;">
