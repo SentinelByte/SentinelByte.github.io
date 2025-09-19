@@ -1,25 +1,42 @@
 # SentinelByte Tech Blog
 Security Engineer | Automation Enthusiast | Cloud Defender
-
-*By Dan Cohen Vaxman | Based in Germany*
-
 ---
-
 ## 🔍 About
 
-**SentinelByte** is the personal knowledge hub and showcase by Dan Cohen Vaxman — a security engineer focused on designing scalable, secure, and intelligent systems through:
-
-- ✨ **Automation**  
-- ☁️ **Cloud Security Architecture**  
-- 🧠 **Model Context Protocols (MCPs)**  
-- 🤖 **Multi-Agent Systems (MAS)**  
-- 📈 **Monitoring & Observability**  
-- 🚨 **Incident Response (IR)**  
-- 🔐 **Security Engineering and Infrastructure as Code**
+**SentinelByte** is a personal knowledge hub by **Dan Cohen Vaxman** — A Security Engineer. The Purpose here is to share knowledge, insights from past & present experience, focused on designing scalable, secure, and intelligent systems.
 
 ---
 
-## 🧰 My Favorite Tech Stack
+## 🔎 Investigative domains & Field Topics
+### Cybersecurity & Threat Analysis
+🕵️‍♂️ Modern cyber threats and scam breakdowns
+🔗 Protocol design and orchestration with MCP
+
+### Cloud & Automation
+☁️ Scaling security in cloud-native environments
+⚙️ Automation for security and operations
+🏛️ Cloud security architecture best practices
+
+### Advanced Systems & Observability
+🤖 Building and defending multi-agent systems (MAS)
+🧠 Model Context Protocols (MCPs)
+📈 Monitoring, observability, and metrics
+
+### Security Engineering & Response
+🛡️ Incident Response (IR) strategies and playbooks
+🔐 Security engineering with Infrastructure as Code (IaC)
+
+### 🌱 Evergreen Tech Playbooks & Resources
+- [Linux Command Cheat Sheets](https://sentinelbyte.github.io/linux/linux-commands-cheatsheet/)
+- [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
+- [Python Scripting Templates for Security Engineers](https://github.com/SentinelByte)  
+- [Threat Modeling Frameworks](https://sentinelbyte.github.io/threat-modeling/top-threat-nodeling-frameworks/)
+- [CI/CD Pipeline Hardening](https://sentinelbyte.github.io/devsecops/cicd-pipline-hardening/)
+- [GithHub Access Control](https://sentinelbyte.github.io/devsecops/granular-github-orgs-access-control/)
+
+---
+
+### 🧰 My Favorite Tech Stack
 
 - **Python & RestAPI** – for scripting, automation, and backend logic  
 - **TypeScript & JS** – for scalable frontend and service code  
@@ -43,24 +60,7 @@ Security Engineer | Automation Enthusiast | Cloud Defender
     SentinelByte's Blog »
 </a>
 
-### 🔎 Investigative & Field Topics
-- Cybersecurity threats and modern scam breakdowns  
-- Incident response lessons from the field  
-- Scaling security in cloud-native environments  
-- Protocol design and orchestration with MCP  
-- Building and defending multi-agent systems (MAS)
-
-### 🌱 Evergreen Tech Playbooks & Resources
-- [Linux Command Cheat Sheets](https://sentinelbyte.github.io/linux/linux-commands-cheatsheet/)
-- [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
-- Python Scripting Templates for Security Engineers  
-- [Threat Modeling Frameworks](https://sentinelbyte.github.io/threat-modeling/top-threat-nodeling-frameworks/)
-- [CI/CD Pipeline Hardening](https://sentinelbyte.github.io/devsecops/cicd-pipline-hardening/)
-- [GithHub Access Control](https://sentinelbyte.github.io/devsecops/granular-github-orgs-access-control/)
-
----
-
-## 📫 Connect
+## 📫 Connect With Me
 
 For collaboration, opportunities, or discussions:
 
