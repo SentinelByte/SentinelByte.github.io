@@ -80,7 +80,7 @@ Before diving into hardening pipelines, let’s compare **two primary CI/CD plat
    * Configured via `.gitlab-ci.yml`.
    * Supports shared and specific runners, protected variables, and built-in SAST/DAST.
 
-> Both platforms allow automation of builds, tests, and deployments, but security configurations and best practices differ slightly. We’ll cover **platform-specific guidance later**.
+> Both platforms allow automation of builds, tests, and deployments, but security configurations and best practices differ slightly. We will cover **platform-specific guidance** below.
 
 ---
 
@@ -89,32 +89,32 @@ Before diving into hardening pipelines, let’s compare **two primary CI/CD plat
 Implement these **step-by-step** to harden pipelines from scratch:
 
 1. **Enforce least privilege for tokens and secrets**
-   * Use ephemeral credentials or OIDC instead of static keys.
-   * Limit access scope to only what the workflow needs.
+* Use ephemeral credentials or OIDC instead of static keys.
+* Limit access scope to only what the workflow needs.
 
 2. **Pin third-party actions and Docker images**
-   * Avoid supply chain attacks by referencing **fixed versions or SHA digests**.
+* Avoid supply chain attacks by referencing **fixed versions or SHA digests**.
 
 3. **Enable branch protection and PR reviews**
-   * Ensure only reviewed and tested code can reach main or production branches.
+* Ensure only reviewed and tested code can reach main or production branches.
 
 4. **Separate build, test, and deployment stages**
-   * Clear separation reduces blast radius if a stage is compromised.
+* Clear separation reduces blast radius if a stage is compromised.
 
 5. **Use ephemeral runners or isolated containers**
-   * Prevent persistent malware or unauthorized access between jobs.
+* Prevent persistent malware or unauthorized access between jobs.
 
 6. **Scan code, dependencies, and containers**
-   * Integrate SAST, DAST, dependency scanning, and container scanning.
+* Integrate SAST, DAST, dependency scanning, and container scanning.
 
 7. **Monitor and audit secrets usage**
-   * Detect unauthorized access or misuse in pipelines.
+* Detect unauthorized access or misuse in pipelines.
 
 8. **Rotate secrets and tokens regularly**
-   * Reduces risk from leaked or stale credentials.
+* Reduces risk from leaked or stale credentials.
 
 9. **Enforce CI/CD workflow permissions**
-   * Grant only the minimum permissions required for each workflow.
+* Grant only the minimum permissions required for each workflow.
 
 > Implementing this checklist **before diving into platform-specific hardening** ensures a strong baseline.
 
