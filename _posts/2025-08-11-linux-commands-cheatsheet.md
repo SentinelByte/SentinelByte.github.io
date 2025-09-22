@@ -159,5 +159,4 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 - Consider bookmarking this page or exporting it as a printable PDF for offline reference.
 
 *Stay efficient. Stay secure.*
-
-\#Linux #SysAdmin #CommandLine #DevOps #CyberSecurity #TechTips
+- Dan.C

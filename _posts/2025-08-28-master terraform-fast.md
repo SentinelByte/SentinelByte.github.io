@@ -363,5 +363,3 @@ Start small (like creating a single bucket or VM), then explore **variables, mod
 
 *Keep learning, stay inovative.*
 — Dan.C
-
-```

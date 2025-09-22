@@ -259,7 +259,3 @@ GitHub org security isn’t a one-time setup — it’s a **continuous process**
 
 *The cost of hardening today is less than the cost of recovering tomorrow.*
 — Dan.C
-
-```
-
----

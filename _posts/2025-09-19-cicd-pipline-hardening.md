@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CI/CD Pipeline Hardening: Securing GitHub Actions & GitLab CI/CD"
-date: 2025-09-11
+date: 2025-09-19
 categories: DevSecOps
 author: Dan.C
 tags: [ci-cd, github-actions, gitlab-ci, devsecops, security, pipeline-hardening, pipeline-security]

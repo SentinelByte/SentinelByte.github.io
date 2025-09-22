@@ -129,5 +129,3 @@ If you’re new, start small with **STRIDE or CVSS**. As your security practice 
 
 *The earlier you model threats, the stronger your defenses will be.*
 — Dan.C
-
-```
