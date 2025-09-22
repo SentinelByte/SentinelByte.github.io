@@ -94,5 +94,4 @@ The Pig Butchering Scam is not only a financial crime; it masks a darker, more d
 Pig Butchering Scams represent a tragic intersection of financial fraud and human trafficking. By understanding the full scope of the threat — from lost money to lost freedom — we can better protect our communities and advocate for justice.
 
 *Stay vigilant. Stay informed.*
-
-\#CyberSecurity #FraudPrevention #LinkedInSafety #StayVigilant #CryptocurrencyScams
+- Dan.C
