@@ -23,7 +23,6 @@ cover: /assets/images/terraform-security-best-practice.jpg
 8. [Review Changes Before Applying](#-7-review-changes-before-applying)  
 9. [Final Thoughts](#-final-thoughts)  
 10. [You may also like](#you-may-also-like)  
-11. [Conclusion](#conclusion)  
 
 ---
 
@@ -32,19 +31,6 @@ cover: /assets/images/terraform-security-best-practice.jpg
 Terraform is a powerful IaC (Infrastructure as Code) tool, but misconfigurations and insecure practices can open doors to serious security breaches. From leaked credentials to over-permissive IAM roles, poor Terraform hygiene is often the root cause of cloud compromise.
 
 This post highlights the key security best practices that I’ve implemented in real-world environments to harden Terraform usage and minimize risk.
-
-# Table of Contents
-
-- [Why Terraform Security Matters](#-why-terraform-security-matters)
-- [1. Use Least Privilege IAM for Terraform](#1-use-least-privilege-iam-for-terraform)
-- [2. Secure Terraform State Files](#2-secure-terraform-state-files)
-- [3. Scan Terraform Code for Vulnerabilities](#3-scan-terraform-code-for-vulnerabilities)
-- [4. Isolate Environments](#4-isolate-environments)
-- [5. Never Hardcode Secrets](#5-never-hardcode-secrets)
-- [6. Harden Your Terraform Modules](#6-harden-your-terraform-modules)
-- [7. Review Changes Before Applying](#7-review-changes-before-applying)
-- [Final Thoughts](#-final-thoughts)
-- [You May Also Like](#-you-may-also-like)
 
 ---
 
