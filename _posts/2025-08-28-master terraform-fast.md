@@ -53,35 +53,6 @@ This post is your **from zero to hero guide**:
 * Cover intermediate concepts like variables, outputs, state, and modules.
 * Wrap up with a **complete cheat sheet** you can use every day.
 
-# Table of Contents
-
-- [What is Terraform (and why should you care)?](#-what-is-terraform-and-why-should-you-care)
-  - [Example Analogy](#example-analogy)
-- [How Terraform Works (The 4-Step Workflow)](#-how-terraform-works-the-4-step-workflow)
-- [Getting Started with Terraform](#-getting-started-with-terraform)
-  - [Step 1. Install Terraform](#step-1-install-terraform)
-  - [Step 2. Set Up Your First Project](#step-2-set-up-your-first-project)
-  - [Step 3. Initialize Terraform](#step-3-initialize-terraform)
-  - [Step 4. Validate Configuration](#step-4-validate-configuration)
-  - [Step 5. Preview the Execution Plan](#step-5-preview-the-execution-plan)
-  - [Step 6. Apply the Plan](#step-6-apply-the-plan)
-  - [Step 7. Destroy Infrastructure](#step-7-destroy-infrastructure)
-- [Going Deeper: Key Terraform Concepts](#-going-deeper-key-terraform-concepts)
-  - [1. Variables](#1-variables)
-  - [2. Outputs](#2-outputs)
-  - [3. State Management](#3-state-management)
-  - [4. Modules](#4-modules)
-  - [5. Workspaces](#5-workspaces)
-- [Terraform Commands Cheat Sheet](#-terraform-commands-cheat-sheet)
-  - [Initialization & Setup](#initialization--setup)
-  - [Core Workflow](#core-workflow)
-  - [State Management](#state-management)
-  - [Variables & Outputs](#variables--outputs)
-  - [Workspaces](#workspaces)
-  - [Debugging & Logs](#debugging--logs)
-- [Final Thoughts](#-final-thoughts)
-- [You May Also Like](#-you-may-also-like)
-
 ---
 
 ## 🌍 What is Terraform (and why should you care)?
