@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Proof of Authorship – Mastering Your Vital Few – The Core Method for Focus, Energy, and Real Results"
+title: "Mastering Your Vital Few – The Core Method for Focus, Energy, and Real Results"
 description: "Verification of ebook authorship for Google Play Books"
 author: Dan Cohen (Vaxman). Pen name "Logan Pierce".
 cover: /assets/images/ebooks/book1-frontcover.png
@@ -9,7 +9,8 @@ cover: /assets/images/ebooks/book1-frontcover.png
 
 ---
 
-# Proof of Authorship – *Mastering Your Vital Few – The Core Method for Focus, Energy, and Real Results*
+# Proof of Authorship 
+## Mastering Your Vital Few – The Core Method for Focus, Energy, and Real Results
 
 This page serves as official confirmation that the ebook **Mastering Your Vital Few – The Core Method for Focus, Energy, and Real Results** was **written and published by Logan Pierce (pen name of Dan Cohen)**.  
 All rights to the content, text, and design of this ebook are fully owned by the author.
