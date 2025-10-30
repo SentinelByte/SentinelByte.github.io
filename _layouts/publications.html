@@ -5,58 +5,88 @@ layout: default
 <h1>Publications</h1>
 <p>Explore original ebooks and research published by Logan Pierce (Dan Cohen).</p>
 
-<div class="posts-list">
+<div class="publications-grid">
   {% assign pubs = site.pages | where_exp: "p", "p.path contains 'publications/'" %}
   {% for pub in pubs %}
     {% if pub.title and pub.url %}
-    <article class="post-item">
-      {% if pub.cover_image %}
-        <a href="{{ pub.url | relative_url }}">
-          <img src="{{ pub.cover_image | relative_url }}" alt="{{ pub.title }}" class="post-cover" />
-        </a>
-      {% endif %}
-      <h2><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h2>
-      {% if pub.description %}
-        <p>{{ pub.description }}</p>
-      {% endif %}
+    <article class="publication-card">
+      <a href="{{ pub.url | relative_url }}" class="card-link">
+        {% if pub.cover_image %}
+          <img src="{{ pub.cover_image | relative_url }}" alt="{{ pub.title }}" class="pub-cover" />
+        {% else %}
+          <div class="pub-cover placeholder">No cover available</div>
+        {% endif %}
+        <div class="pub-info">
+          <h2>{{ pub.title }}</h2>
+          {% if pub.description %}
+            <p>{{ pub.description }}</p>
+          {% endif %}
+        </div>
+      </a>
     </article>
     {% endif %}
   {% endfor %}
 </div>
 
 <style>
-.posts-list {
+.publications-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.post-item {
-  background: #f8f9fa;
+.publication-card {
+  background: #f9f9f9;
   border-radius: 12px;
-  padding: 1.2rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: transform 0.15s ease;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.post-item:hover {
-  transform: translateY(-4px);
+.publication-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-.post-cover {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
-h2 a {
-  color: #222;
+.card-link {
   text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-h2 a:hover {
-  text-decoration: underline;
+.pub-cover {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.pub-cover.placeholder {
+  background: #ddd;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.pub-info {
+  padding: 1rem 1.2rem;
+}
+
+.pub-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.pub-info p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0;
 }
 </style>
