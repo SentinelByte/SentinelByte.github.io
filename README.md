@@ -3,10 +3,26 @@ Security Engineer | Automation Enthusiast | Cloud Defender
 ---
 ## 🔍 About
 
-**SentinelByte.io** is a personal knowledge hub by **Dan Cohen Vaxman** — A Security Engineer. The Purpose here is to share knowledge, insights from past & present experience. Focusing on designing scalable, secure, and intelligent systems.
+**SentinelByte.io** is a personal knowledge hub by **Dan Cohen (Vaxman)** — a Security Engineer focused on designing scalable, secure, and intelligent systems.
+It serves as a space to share technical insights, research, and practical experience from the cybersecurity and engineering domains.
+
+Beyond technology, SentinelByte also **features a growing collection of original publications and ebooks**, written to explore themes of **focus, growth, and personal development** — extending the pursuit of improvement beyond systems, into the human side of performance and clarity. 
+
+<a href="/publications/" style="
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+">
+    Dan's ebooks Publications »
+</a>
 
 ---
 
+# Technical Stuff
 ## 🔎 Investigative domains & Field Topics
 ### 🔗 Cybersecurity & Threat Analysis
 - Modern cyber threats and scam breakdowns
@@ -43,8 +59,7 @@ Security Engineer | Automation Enthusiast | Cloud Defender
 
 ---
 
-## ✍️ Latest Posts
-
+## ✍️ Latest Tech Posts
 <p>Check out the latest posts on SentinelByte's Blog for up-to-date cybersecurity content, tech cheat sheets, write-ups, news, and field reports on topics ranging from:</p>
 
 <a href="/blog/" style="
@@ -69,3 +84,5 @@ For collaboration, opportunities, or discussions:
 ---
 
 > *“Build defensible systems, automate the boring, and stay ahead of the threat.”*
+
+> *“Refine your focus. Reclaim your energy. Real results follow.”*
