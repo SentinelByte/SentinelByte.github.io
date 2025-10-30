@@ -3,7 +3,7 @@ layout: post
 title: "Mastering Your Vital Few – The Core Method for Focus, Energy, and Real Results"
 description: "Verification of ebook authorship for Google Play Books"
 author: Dan Cohen (Vaxman). Pen name "Logan Pierce".
-cover: /assets/images/ebooks/book1-frontcover.png
+cover_image: /assets/images/ebooks/book1-frontcover.png
 ---
 ![Cover Image](/assets/images/ebooks/book1-frontcover.png)
 
