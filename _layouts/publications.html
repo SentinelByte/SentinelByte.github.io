@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<h1>Publications</h1>
+<p>Explore original ebooks and research published by Logan Pierce (Dan Cohen).</p>
+
+<div class="posts-list">
+  {% assign pubs = site.pages | where_exp: "p", "p.path contains 'publications/'" %}
+  {% for pub in pubs %}
+    {% if pub.title and pub.url %}
+    <article class="post-item">
+      {% if pub.cover_image %}
+        <a href="{{ pub.url | relative_url }}">
+          <img src="{{ pub.cover_image | relative_url }}" alt="{{ pub.title }}" class="post-cover" />
+        </a>
+      {% endif %}
+      <h2><a href="{{ pub.url | relative_url }}">{{ pub.title }}</a></h2>
+      {% if pub.description %}
+        <p>{{ pub.description }}</p>
+      {% endif %}
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<style>
+.posts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.post-item {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-4px);
+}
+
+.post-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+h2 a {
+  color: #222;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+</style>
