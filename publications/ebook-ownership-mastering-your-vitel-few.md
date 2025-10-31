@@ -37,6 +37,20 @@ Learn how to focus on the tasks, projects, and relationships that truly drive re
 
 ---
 
+### ebook Table of Content
+- **Chapter 01:** The Overload Trap — Why More Isn’t Better
+- **Chapter 02:** Seeing the Invisible 20%
+- **Chapter 03:** Cutting the Noise, Keeping the Signal
+- **Chapter 04:** Designing a High-Impact Career
+- **Chapter 05:** The 80/20 Body - Health That Fuels, Not Consumes
+- **Chapter 06:** Relationships That Matter Most
+- **Chapter 07:** Money and the 80/20 Rule
+- **Chapter 08:** Energy, Focus, and the Power Curve
+- **Chapter 09:** Designing Your 80/20 Lifestyle
+- **Chapter 10:** Living the 80/20 Life — Freedom and Fulfillment
+
+---
+
 ### 🖋️ Authorship Statement
 
 > I, **Dan Cohen**, confirm that I am the original author and rights holder of this work, published under the pen name **Logan Pierce**.  
@@ -51,6 +65,12 @@ This work is self-published by the author through:
 - **Contact:** [Dan Cohen Vaxman](https://www.linkedin.com/in/35b767173/)
 
 ---
+
+### Where to get the ebook?
+The ebook **Mastering Your Vital Few – The Core Method for Focus, Energy, and Real Results** by Logan Pierce (Pen Name) will soon be available on Google Play Books, Apple Books, and additional digital platforms.
+
+Stay tuned!
+
 
 ### 📘 Book Covers
 
