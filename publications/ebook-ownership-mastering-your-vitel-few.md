@@ -73,12 +73,11 @@ Stay tuned!
 
 
 ### 📘 Book Covers
+<div style="display: flex; gap: 20px; align-items: flex-start;">
+  <img src="/assets/images/ebooks/book1-frontcover.png" alt="Front Cover" style="width: 48%; border-radius: 6px;">
+  <img src="/assets/images/ebooks/book1-backcover.png" alt="Back Cover" style="width: 48%; border-radius: 6px;">
+</div>
 
-#### Front Cover
-![Front Cover](/assets/images/ebooks/book1-frontcover.png)
-
-#### Back Cover
-![Back Cover](/assets/images/ebooks/book1-backcover.png)
 
 
 _Last updated: {{ site.time | date: "%B %d, %Y" }}_
