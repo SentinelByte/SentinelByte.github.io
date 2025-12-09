@@ -9,6 +9,8 @@ excerpt: "Practical guide for security engineers to automate auditing scripts th
 cover: /assets/images/drift-no-more.png
 ---
 
+![Cover Image](/assets/images/drift-no-more.png)
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [What is Configuration Drift?](#what-is-configuration-drift)
