@@ -1,0 +1,102 @@
+/* Blog Post Content Styling */
+.blog-post {
+  max-width: 900px;       /* Keep content centered and readable */
+  margin: 0 auto;         /* Center on the page */
+  padding: 20px;          /* Space around the text */
+  box-sizing: border-box; /* Include padding in width calculation */
+  word-wrap: break-word;  /* Prevent long words from breaking layout */
+}
+
+.blog-post h1,
+.blog-post h2,
+.blog-post h3,
+.blog-post h4,
+.blog-post h5,
+.blog-post h6 {
+  line-height: 1.4;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.blog-post p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+.blog-post pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+.blog-post code {
+  background-color: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+
+.blog-post a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: blockquotes */
+.blog-post blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 15px;
+  color: #666;
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+/* Ensure tables fit the container */
+.blog-post table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.blog-post table th,
+.blog-post table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.blog-post table th {
+  background-color: #f0f0f0;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+  .blog-post {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .blog-post img {
+    width: 100%;
+  }
+
+  .blog-post table {
+    font-size: 0.9rem;
+  }
+}
