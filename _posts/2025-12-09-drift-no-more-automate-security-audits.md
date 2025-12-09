@@ -9,7 +9,7 @@ excerpt: "Practical guide for security engineers to automate auditing scripts th
 cover: /assets/images/drift-no-more.png
 ---
 
-<!-- ![Cover Image](/assets/images/drift-no-more.png) -->
+![Cover Image](/assets/images/drift-no-more.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -140,34 +140,40 @@ Selecting the right tools is crucial for effective drift detection and automated
 
 Several open-source tools are widely used in the security and DevOps community:
 
-- **Terraform + `terraform plan`**  
-  - Detects differences between deployed infrastructure and Terraform configuration.  
-  - Can be integrated into CI/CD pipelines for automated checks.
-  - Example:
-    ```bash
-    terraform init
-    terraform plan -out=plan.out
-    terraform show -json plan.out
-    ```
+**Terraform + `terraform plan`**  
+Detects differences between deployed infrastructure and Terraform configuration.  
 
-- **InSpec (by Chef)**  
-  - Allows writing tests for infrastructure configurations in a human-readable way.  
-  - Can check servers, cloud resources, and more.
-  - Example:
-    ```ruby
-    describe aws_s3_bucket('my-bucket') do
-      it { should exist }
-      it { should_not be_public }
-    end
-    ```
+Can be integrated into CI/CD pipelines for automated checks.
 
-- **Ansible + `ansible-playbook --check`**  
-  - Simulates configuration changes without applying them.  
-  - Useful for detecting drift in server or application configurations.
-  - Example:
-    ```bash
-    ansible-playbook playbook.yml --check
-    ```
+Example:
+```bash
+terraform init
+terraform plan -out=plan.out
+terraform show -json plan.out
+```
+
+**InSpec (by Chef)**  
+Allows writing tests for infrastructure configurations in a human-readable way.  
+
+Can check servers, cloud resources, and more.
+
+Example:
+```ruby
+describe aws_s3_bucket('my-bucket') do
+    it { should exist }
+    it { should_not be_public }
+end
+```
+
+**Ansible + `ansible-playbook --check`**  
+Simulates configuration changes without applying them.  
+
+Useful for detecting drift in server or application configurations.
+
+Example:
+```bash
+ansible-playbook playbook.yml --check
+```
 
 ---
 
@@ -175,26 +181,29 @@ Several open-source tools are widely used in the security and DevOps community:
 
 Cloud providers offer native services for configuration monitoring:
 
-- **AWS Config**  
-  - Continuously monitors AWS resource configurations.  
-  - Allows defining **rules** to detect non-compliant resources.
-  - Example: Detect S3 buckets without encryption.
-    ```json
-    {
-      "ConfigRuleName": "s3-bucket-encrypted",
-      "Source": {
-        "Owner": "AWS",
-        "SourceIdentifier": "S3_BUCKET_SERVER_SIDE_ENCRYPTION_ENABLED"
-      }
+**AWS Config**  
+Continuously monitors AWS resource configurations.  
+
+Allows defining **rules** to detect non-compliant resources.
+
+Example: Detect S3 buckets without encryption.
+```json
+{
+    "ConfigRuleName": "s3-bucket-encrypted",
+    "Source": {
+    "Owner": "AWS",
+    "SourceIdentifier": "S3_BUCKET_SERVER_SIDE_ENCRYPTION_ENABLED"
     }
-    ```
+}
+```
 
-- **AWS CloudTrail + CloudWatch**  
-  - Tracks API activity and changes across AWS services.  
-  - Enables alerting when configuration drift occurs.
+**AWS CloudTrail + CloudWatch**  
+Tracks API activity and changes across AWS services.  
 
-- **AWS Systems Manager Compliance**  
-  - Checks managed instances against a desired state defined by **State Manager documents**.
+Enables alerting when configuration drift occurs.
+
+**AWS Systems Manager Compliance**  
+Checks managed instances against a desired state defined by **State Manager documents**.
 
 Using the right combination of **open-source and cloud-native tools** ensures you can detect drift **across both on-prem and cloud environments**, providing full coverage for security engineers.
 
@@ -262,7 +271,10 @@ DESIRED_IMAGE="nginx:1.25"
 for container in $(docker ps --format '{{.Names}}'); do
     image=$(docker inspect --format='{{.Config.Image}}' $container)
     if [ "$image" != "$DESIRED_IMAGE" ]; then
-        echo "DRIFT DETECTED: Container $container is running $image instead of $DESIRED_IMAGE"
+        echo "DRIFT DETECTED:"
+        echo "Container $container"
+        echo "running $image instead of $DESIRED_IMAGE"
+        echo "---"
     fi
 done
 ```
