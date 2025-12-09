@@ -1,12 +1,13 @@
 /* Blog Post Content Styling */
 .blog-post {
-  max-width: 900px;       /* Keep content centered and readable */
-  margin: 0 auto;         /* Center on the page */
-  padding: 20px;          /* Space around the text */
-  box-sizing: border-box; /* Include padding in width calculation */
-  word-wrap: break-word;  /* Prevent long words from breaking layout */
+  max-width: 1100px;       /* Wider max-width for desktop readability */
+  margin: 0 auto;          /* Center content */
+  padding: 25px 30px;      /* Top/bottom 25px, left/right 30px */
+  box-sizing: border-box;
+  word-wrap: break-word;   /* Prevent long words from breaking layout */
 }
 
+/* Headings */
 .blog-post h1,
 .blog-post h2,
 .blog-post h3,
@@ -19,6 +20,7 @@
   color: #222;
 }
 
+/* Paragraphs */
 .blog-post p {
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -26,6 +28,7 @@
   font-size: 1rem;
 }
 
+/* Images */
 .blog-post img {
   max-width: 100%;
   height: auto;
@@ -34,11 +37,17 @@
   border-radius: 8px;
 }
 
+/* Code blocks */
 .blog-post pre {
   background-color: #f5f5f5;
-  padding: 15px;
-  overflow-x: auto;
+  padding: 1rem 1.5rem;    /* Slightly more horizontal padding */
+  overflow-x: auto;         /* Horizontal scroll for long lines */
   border-radius: 6px;
+  word-wrap: normal;
+  white-space: pre;
+  display: block;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .blog-post code {
@@ -47,8 +56,10 @@
   border-radius: 4px;
   font-family: monospace;
   font-size: 0.95rem;
+  word-break: break-word;   /* Break long inline code if needed */
 }
 
+/* Links */
 .blog-post a {
   color: #007acc;
   text-decoration: none;
@@ -58,7 +69,7 @@
   text-decoration: underline;
 }
 
-/* Optional: blockquotes */
+/* Blockquotes */
 .blog-post blockquote {
   border-left: 4px solid #ccc;
   padding-left: 15px;
@@ -67,7 +78,7 @@
   font-style: italic;
 }
 
-/* Ensure tables fit the container */
+/* Tables */
 .blog-post table {
   width: 100%;
   border-collapse: collapse;
@@ -88,7 +99,7 @@
 /* Responsive for smaller screens */
 @media screen and (max-width: 768px) {
   .blog-post {
-    padding: 15px;
+    padding: 15px;         /* Less padding on mobile */
     max-width: 100%;
   }
 
@@ -98,5 +109,9 @@
 
   .blog-post table {
     font-size: 0.9rem;
+  }
+
+  .blog-post pre {
+    padding: 0.8rem 1rem;  /* Slightly smaller padding on mobile */
   }
 }
