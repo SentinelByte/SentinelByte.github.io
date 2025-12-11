@@ -11,12 +11,10 @@ cover: /assets/images/github-access-control.png
 
 ![Cover Image](/assets/images/github-access-control.png)
 
-# GitHub Organizational Access and Secrets Management: Hardening at Scale
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [What is Access Control in GitHub Organizations?](#what-is-access-control-in-github-organizations)
-- [🚀 GitHub Org Security Playbook (Step-by-Step)](#-github-org-security-playbook-step-by-step)
+- [GitHub Org Security Playbook (Step-by-Step)](#github-org-security-playbook-step-by-step)
 - [Designing Teams and Roles for Least Privilege](#designing-teams-and-roles-for-least-privilege)
 - [Enforcement: 2FA, SSO, and Branch Protection](#enforcement-2fa-sso-and-branch-protection)
 - [Automating Access Control with CLI, API, and Terraform](#automating-access-control-with-cli-api-and-terraform)
@@ -45,7 +43,7 @@ At its core, **access control** is about answering one simple question:
 
 GitHub provides multiple layers of access control that work together. Think of it like doors in a building — some people can only enter the lobby, some can access specific floors, and only a few hold the master keys.
 
-### 🔑 Key Building Blocks
+### Key Building Blocks
 
 * **Organization Roles**
   * **Owner** → Full control (root-level access). Use sparingly.
@@ -72,7 +70,7 @@ GitHub provides multiple layers of access control that work together. Think of i
 
 ---
 
-### 🚫 Common Anti-Patterns (What NOT to Do)
+### Common Anti-Patterns (What NOT to Do)
 
 - Giving every team **Write** access “just in case.”  
 - Using **classic PATs with broad scopes**.  
@@ -82,7 +80,7 @@ GitHub provides multiple layers of access control that work together. Think of i
 
 ---
 
-## 🚀 GitHub Org Security Playbook (Step-by-Step)
+## GitHub Org Security Playbook (Step-by-Step)
 
 If you’re starting with a **brand new GitHub org**, here’s a practical workflow you can follow.
 
@@ -232,14 +230,14 @@ Monitor for:
 
 ## Security Baseline Checklist
 
-* [ ] Enforce **2FA** and **SSO**
-* [ ] Limit Owners to 2–3 max
-* [ ] Codify permissions with Terraform
-* [ ] Apply **branch protection + CODEOWNERS**
-* [ ] Enable **secret scanning** org-wide
-* [ ] Replace static keys with **OIDC**
-* [ ] Audit roles & secrets monthly
-* [ ] Export audit logs daily
+[ ] Enforce **2FA** and **SSO**
+[ ] Limit Owners to 2–3 max
+[ ] Codify permissions with Terraform
+[ ] Apply **branch protection + CODEOWNERS**
+[ ] Enable **secret scanning** org-wide
+[ ] Replace static keys with **OIDC**
+[ ] Audit roles & secrets monthly
+[ ] Export audit logs daily
 
 ---
 

@@ -11,8 +11,6 @@ cover: /assets/images/cicd-hardening.png
 
 ![Cover Image](/assets/images/cicd-hardening.png)
 
-# CI/CD Pipeline Hardening: Securing GitHub Actions & GitLab CI/CD
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [What is CI/CD?](#what-is-cicd)
@@ -326,7 +324,7 @@ Implementing these practices ensures automation **enhances productivity without 
 
 ## Related Posts
 
-* [Top Threat Modeling Frameworks](https://sentinelbyte.github.io/threat-modeling/top-threat-nodeling-frameworks/)
+ [Top Threat Modeling Frameworks](https://sentinelbyte.github.io/threat-modeling/top-threat-nodeling-frameworks/)*
 * [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
 * [Pig Butchering Scams: How Social Engineering Works](https://sentinelbyte.github.io/social-engineering/the-pig-butchering-scams/)
 

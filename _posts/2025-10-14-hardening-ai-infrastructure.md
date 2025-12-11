@@ -11,8 +11,6 @@ cover: /assets/images/ai-security.jpg
 
 ![Cover Image](/assets/images/ai-security.jpg)
 
-# AI Security: Hardening Open-Source and Cloud ML Pipelines
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [What is AI/ML and Why Security Matters](#what-is-aiml-and-why-security-matters)
