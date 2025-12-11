@@ -10,29 +10,26 @@ cover: /assets/images/linux-cheatsheet.jpg
 ---
 ![Cover Image](/assets/images/linux-cheatsheet.jpg)
 
-# 🐧 Linux Command Cheat Sheet
-
-A curated reference guide to the most essential Linux commands — ideal for system administrators, developers, DevOps engineers, and cybersecurity professionals. Whether you're a beginner or brushing up your skills, this categorized cheat sheet will help streamline your command-line workflow.
-
-
 ## Table of Contents
-1. [Introduction](#-linux-command-cheat-sheet)  
-2. [File and Directory Operations](#-file-and-directory-operations)  
-3. [Viewing & Editing Files](#️-viewing--editing-files)  
-4. [Permissions & Ownership](#-permissions--ownership)  
-5. [System Information](#-system-information)  
-6. [User & Process Management](#-user--process-management)  
-7. [Networking Commands](#-networking-commands)  
-8. [Package Management](#-package-management)  
-   - [Debian/Ubuntu (APT)](#-debianubuntu-apt)  
-   - [Red Hat/CentOS (YUM/DNF)](#-red-hatcentos-yumdnf)  
-9. [Searching Files](#-searching-files)  
-10. [Keyboard Shortcuts & History](#-keyboard-shortcuts--history)  
-11. [Notes](#-notes)  
+1. [Introduction](#linux-command-cheat-sheet)  
+2. [File and Directory Operations](#file-and-directory-operations)  
+3. [Viewing & Editing Files](#️viewing--editing-files)  
+4. [Permissions & Ownership](#permissions--ownership)  
+5. [System Information](#system-information)  
+6. [User & Process Management](#user-and-process-management)  
+7. [Networking Commands](#networking-commands)  
+8. [Package Management](#package-management)  
+9. [Searching Files](#searching-files)  
+10. [Keyboard Shortcuts & History](#keyboard-shortcuts--history)  
+11. [Notes](#notes)
+12. [Related Posts](#related-posts)
 
 ---
 
-## 🔍 File and Directory Operations
+Reference guide to the most essential Linux commands — ideal for sys admins, developers, DevOps engineers, and cybersecurity professionals. This cheat sheet will help streamline your command-line workflow.
+
+
+## File and Directory Operations
 
 | Command | Description |
 |--------|-------------|
@@ -47,9 +44,8 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 | `cp source dest` | Copy a file or directory |
 | `mv old new` | Move or rename a file or directory |
 
----
 
-## 🛠️ Viewing & Editing Files
+## Viewing & Editing Files
 
 | Command | Description |
 |--------|-------------|
@@ -60,9 +56,8 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 | `nano file.txt` | Edit file using Nano (beginner-friendly) |
 | `vim file.txt` | Edit file using Vim (advanced editor) |
 
----
 
-## 📁 Permissions & Ownership
+## Permissions & Ownership
 
 | Command | Description |
 |--------|-------------|
@@ -70,9 +65,8 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 | `chmod 755 file` | Set read/write/execute permissions (owner), and read/execute (group, others) |
 | `chown user:group file` | Change file ownership |
 
----
 
-## 🧠 System Information
+## System Information
 
 | Command | Description |
 |--------|-------------|
@@ -82,9 +76,8 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 | `free -h` | Show memory usage |
 | `uptime` | Show how long the system has been running |
 
----
 
-## 🔐 User & Process Management
+## User and Process Management
 
 | Command | Description |
 |--------|-------------|
@@ -96,9 +89,8 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 | `adduser username` | Add a new user |
 | `passwd username` | Change a user's password |
 
----
 
-## 🌐 Networking Commands
+## Networking Commands
 
 | Command | Description |
 |--------|-------------|
@@ -108,11 +100,10 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 | `netstat -tulpn` | Show active listening ports and services (legacy; use `ss` for modern systems) |
 | `ssh user@host` | Connect to a remote host via SSH |
 
----
 
-## 🧹 Package Management
+## Package Management
 
-### 📦 Debian/Ubuntu (APT)
+### Debian/Ubuntu (APT)
 
 | Command | Description |
 |--------|-------------|
@@ -121,16 +112,15 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 | `sudo apt install package` | Install a new package |
 | `sudo apt remove package` | Remove a package |
 
-### 📦 Red Hat/CentOS (YUM/DNF)
+### Red Hat/CentOS (YUM/DNF)
 
 | Command | Description |
 |--------|-------------|
 | `sudo yum install package` | Install package (YUM) |
 | `sudo dnf upgrade` | Upgrade packages (DNF, successor to YUM) |
 
----
 
-## 📝 Searching Files
+## Searching Files
 
 | Command | Description |
 |--------|-------------|
@@ -138,9 +128,8 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 | `grep 'pattern' file.txt` | Search for a text pattern in a file |
 | `locate file.txt` | Quickly find file paths using an indexed database (`updatedb` required) |
 
----
 
-## 💡 Keyboard Shortcuts & History
+## Keyboard Shortcuts & History
 
 | Shortcut | Description |
 |----------|-------------|
@@ -150,14 +139,20 @@ A curated reference guide to the most essential Linux commands — ideal for sys
 | `!!` | Repeat the last command |
 | `!abc` | Run the most recent command starting with `abc` |
 
----
 
-## 📎 Notes
+## Notes
 
 - Most of these commands are compatible across major Linux distributions.
 - Prefix commands with `sudo` where administrative privileges are required.
 - Consider bookmarking this page or exporting it as a printable PDF for offline reference.
 
+
+## Related posts
+
+* [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
+* [Master TF fast - Guide + Cheat Sheet](https://sentinelbyte.github.io/terraform/master-terraform-fast/)
+
+---
 
 *Stay efficient. Stay secure.*
 - Dan.C
