@@ -33,7 +33,6 @@ GitHub is the backbone of many organizations’ development lifecycle. But witho
 
 This post provides practical best practices with **real CLI, API, and Terraform configurations**, showing how to build a GitHub org security baseline that can scale.
 
----
 
 ## What is Access Control in GitHub Organizations?
 
@@ -68,7 +67,6 @@ GitHub provides multiple layers of access control that work together. Think of i
 * **Machine Identities**
   * **GitHub Apps** (preferred), **fine-grained PATs**, **Actions GITHUB_TOKEN**, and **OIDC** (recommended for cloud access).
 
----
 
 ### Common Anti-Patterns (What NOT to Do)
 
@@ -78,7 +76,6 @@ GitHub provides multiple layers of access control that work together. Think of i
 - Assigning too many **Owners**.  
 - Forgetting to remove **outside collaborators** after contracts end.  
 
----
 
 ## GitHub Org Security Playbook (Step-by-Step)
 
@@ -115,7 +112,6 @@ If you’re starting with a **brand new GitHub org**, here’s a practical workf
 - Alert on new owners, PAT creation, or external collaborator additions.  
 - Do **quarterly access reviews** with team leads.  
 
----
 
 ## Designing Teams and Roles for Least Privilege
 
@@ -130,18 +126,15 @@ If you’re starting with a **brand new GitHub org**, here’s a practical workf
 gh api -X PUT \
   /orgs/ORG/teams/security/memberships/<USERNAME> \
   -f role=member
-````
-
----
+```
 
 ## Enforcement: 2FA, SSO, and Branch Protection
 
-* **Require 2FA** ([GitHub docs](https://docs.github.com/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization))
+* **Require 2FA** ([GitHub docs](https://docs.github.com/organizations/keeping-your-organization-secure/managing-two-factor-authentication-for-your-organization/requiring-two-factor-authentication-in-your-organization)){target="_blank"}
 * **Enforce SAML SSO** to your IdP.
 * **Branch protections**: PR reviews, status checks, linear history.
 * **CODEOWNERS**: sensitive paths require explicit review.
 
----
 
 ## Automating Access Control with CLI, API, and Terraform
 
@@ -175,8 +168,6 @@ resource "github_team_repository" "security_repo_access" {
 }
 ```
 
----
-
 ## Secrets Management Best Practices
 
 * Enable **secret scanning + push protection** org-wide.
@@ -184,7 +175,6 @@ resource "github_team_repository" "security_repo_access" {
 * Rotate secrets every 90 days (automate if possible).
 * Never rely on private repos for secret storage.
 
----
 
 ## Using OIDC Instead of Static Secrets
 
@@ -198,18 +188,17 @@ permissions:
   contents: read
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Configure AWS creds via OIDC
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: arn:aws:iam::123456789012:role/GitHubActionsRole
-          aws-region: eu-central-1
+ deploy:
+  runs-on: ubuntu-latest
+   steps:
+    - uses: actions/checkout@v4
+    - name: Configure AWS creds via OIDC
+     uses: aws-actions/configure-aws-credentials@v4
+     with:
+      role-to-assume: arn:aws:iam::123456789012:role/GitHubActionsRole
+      aws-region: eu-central-1
 ```
 
----
 
 ## Auditing and Monitoring with the Audit Log API
 
@@ -227,32 +216,22 @@ Monitor for:
 * PATs with broad scopes.
 * Outside collaborator additions.
 
----
 
 ## Security Baseline Checklist
-[ ] Enforce **2FA** and **SSO**
+* Enforce **2FA** and **SSO**
+* Limit Owners to 2–3 max
+* Codify permissions with Terraform
+* Apply **branch protection + CODEOWNERS**
+* Enable **secret scanning** org-wide
+* Replace static keys with **OIDC**
+* Audit roles & secrets monthly
+* Export audit logs daily
 
-[ ] Limit Owners to 2–3 max
-
-[ ] Codify permissions with Terraform
-
-[ ] Apply **branch protection + CODEOWNERS**
-
-[ ] Enable **secret scanning** org-wide
-
-[ ] Replace static keys with **OIDC**
-
-[ ] Audit roles & secrets monthly
-
-[ ] Export audit logs daily
-
----
 
 ## Conclusion
 
 GitHub org security isn’t a one-time setup — it’s a **continuous process**. By combining **least privilege, secrets hygiene, and automation**, DevSecOps teams can stay ahead of attackers and scale securely.
 
----
 
 ## Related Posts
 
