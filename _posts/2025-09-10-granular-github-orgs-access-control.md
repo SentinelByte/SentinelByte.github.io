@@ -214,10 +214,11 @@ jobs:
 ## Auditing and Monitoring with the Audit Log API
 
 **Get last 100 audit events**
+Endpint should be - 
+"https://api.github.com/orgs/ORG/audit-log?per_page=100&include=web,repo,team"
 
 ```bash
-curl -H "Authorization: Bearer $GITHUB_TOKEN" \
-     "https://api.github.com/orgs/ORG/audit-log?per_page=100&include=web,repo,team"
+curl -H "Authorization: Bearer $GITHUB_TOKEN" "<endppoint>"
 ```
 
 Monitor for:
@@ -229,14 +230,20 @@ Monitor for:
 ---
 
 ## Security Baseline Checklist
-
 [ ] Enforce **2FA** and **SSO**
+
 [ ] Limit Owners to 2–3 max
+
 [ ] Codify permissions with Terraform
+
 [ ] Apply **branch protection + CODEOWNERS**
+
 [ ] Enable **secret scanning** org-wide
+
 [ ] Replace static keys with **OIDC**
+
 [ ] Audit roles & secrets monthly
+
 [ ] Export audit logs daily
 
 ---
