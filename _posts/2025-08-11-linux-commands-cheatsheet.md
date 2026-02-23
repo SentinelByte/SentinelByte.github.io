@@ -147,10 +147,9 @@ Reference guide to the most essential Linux commands — ideal for sys admins, d
 - Consider bookmarking this page or exporting it as a printable PDF for offline reference.
 
 
-## Related posts
+## Related Posts
 
-* [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
-* [Master TF fast - Guide + Cheat Sheet](https://sentinelbyte.github.io/terraform/master-terraform-fast/)
+{% include related-posts.html %}
 
 ---
 

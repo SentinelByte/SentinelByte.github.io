@@ -25,7 +25,7 @@ cover: /assets/images/cyberThreatModeling.jpg
 - [Comparison Table](#comparison-table)
 - [Bringing It All Together](#bringing-it-all-together)
 - [Conclusion](#conclusion)
-- [You May Also Like](#you-may-also-like)
+- [Realted Posts](#related-posts)
 
 ---
 
@@ -120,10 +120,10 @@ If you’re new, start small with **STRIDE or CVSS**. As your security practice 
 
 ---
 
-**You may also like:**
+## Realted Posts
 
-* [The Pig Butchering Scam](https://sentinelbyte.github.io/social-engineering/the-pig-butchering-scams/)
-* [Terraform Security Best Practice](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
+{% include related-posts.html %}
+
 
 ---
 

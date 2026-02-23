@@ -105,3 +105,9 @@ AiTM demonstrates how to bypass traditional MFA by targeting session tokens inst
 ## Related Posts
 
 {% include related-posts.html %}
+
+
+---
+
+*Modern attacks target sessions, not just passwords.*
+- Dan.C

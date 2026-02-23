@@ -355,9 +355,8 @@ Configuration drift is a hidden risk that can silently undermine security and st
 
 ## Related Posts
 
-* [Top Threat Modeling Frameworks](https://sentinelbyte.github.io/threat-modeling/top-threat-nodeling-frameworks//)
-* [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
-* [CI/CD Pipeline Hardening](https://sentinelbyte.github.io/devsecops/cicd-pipline-hardening/)
+{% include related-posts.html %}
+
 
 ---
 
