@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
+
+{% assign latest_post = site.posts.first %}
+<div class="blog-container" style="max-width: 800px; margin-top: 1rem;">
+  <div class="blog-card" style="margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #eee;">
+    {% if latest_post.cover %}
+      <a href="{{ latest_post.url | relative_url }}">
+        <img src="{{ latest_post.cover | relative_url }}" alt="{{ latest_post.title }} cover image" style="width: 100%; height: auto; border-bottom: 1px solid #eee;">
+      </a>
+    {% endif %}
+    <div class="blog-content" style="padding: 1.5rem;">
+      <h2 style="margin-top: 0;"><a href="{{ latest_post.url | relative_url }}" style="text-decoration: none; color: #333;">{{ latest_post.title }}</a></h2>
+      <div class="blog-date" style="color: #888; margin-bottom: 1rem;">{{ latest_post.date | date: "%B %-d, %Y" }}</div>
+      {% if latest_post.excerpt %}
+        <p style="color: #666; line-height: 1.6;">{{ latest_post.excerpt | strip_html | truncatewords: 25 }}</p>
+      {% endif %}
+      <a href="{{ latest_post.url | relative_url }}" class="category-button" style="display: inline-block; background-color: #000; color: #fff; padding: 8px 16px; border-radius: 5px; text-decoration: none; font-weight: 600;">
+        Read the full article »
+      </a>
+    </div>
+  </div>
+</div>
