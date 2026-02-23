@@ -12,6 +12,8 @@
       display: flex;
       min-height: 100vh;
       flex-wrap: nowrap;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .sidebar {
@@ -27,6 +29,18 @@
       padding: 40px;
       box-sizing: border-box;
       text-align: left;
+      min-width: 0; /* Prevents flex items from overflowing */
+    }
+
+    /* Ensure code blocks and images don't break layout */
+    .content img, 
+    .content pre, 
+    .content code {
+      max-width: 100%;
+      height: auto;
+      overflow-x: auto;
+      white-space: pre-wrap; /* Wrap long lines if possible */
+      word-wrap: break-word;
     }
 
     /* Sidebar nav buttons */
