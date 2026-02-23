@@ -235,9 +235,8 @@ GitHub org security isn’t a one-time setup — it’s a **continuous process**
 
 ## Related Posts
 
-* [Top Threat Modeling Frameworks](https://sentinelbyte.github.io/threat-modeling/top-threat-nodeling-frameworks/)
-* [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
-* [Pig Butchering Scams](https://sentinelbyte.github.io/social-engineering/the-pig-butchering-scams/)
+{% include related-posts.html %}
+
 
 ---
 

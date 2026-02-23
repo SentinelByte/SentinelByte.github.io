@@ -281,8 +281,8 @@ Start small (like creating a single bucket or VM), then explore **variables, mod
 
 **Related Posts**
 
-* [Linux commands cheat Sheat](https://sentinelbyte.github.io/linux/linux-commands-cheatsheet/)
-* [TF Security Best Practice](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
+{% include related-posts.html %}
+
 
 ---
 

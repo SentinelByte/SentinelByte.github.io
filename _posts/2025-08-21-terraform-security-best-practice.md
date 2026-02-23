@@ -124,8 +124,7 @@ Want more? I’ll soon publish a secure AWS Terraform project template with buil
 
 ## Related posts
 
-* [Linux commands cheat Sheat](https://sentinelbyte.github.io/linux/linux-commands-cheatsheet/)
-* [Master TF fast - Guide + Cheat Sheet](https://sentinelbyte.github.io/terraform/master-terraform-fast/)
+{% include related-posts.html %}
 
 ---
 

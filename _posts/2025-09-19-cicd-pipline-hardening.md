@@ -324,9 +324,8 @@ Implementing these practices ensures automation **enhances productivity without 
 
 ## Related Posts
 
- [Top Threat Modeling Frameworks](https://sentinelbyte.github.io/threat-modeling/top-threat-nodeling-frameworks/)*
-* [Terraform Security Best Practices](https://sentinelbyte.github.io/terraform/terraform-security-best-practice/)
-* [Pig Butchering Scams: How Social Engineering Works](https://sentinelbyte.github.io/social-engineering/the-pig-butchering-scams/)
+{% include related-posts.html %}
+
 
 ---
 
