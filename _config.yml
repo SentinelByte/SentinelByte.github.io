@@ -3,3 +3,19 @@ theme: jekyll-theme-minimal
 title: SentinelByte
 description: Technical content and hands-on guides on cybersecurity, automation, AI/ML, cloud, pipelines and more.
 permalink: /:categories/:title/
+
+url: "https://sentinelbyte.github.io"
+author: Dan Cohen Vaxman
+github_username: SentinelByte
+logo: /assets/images/SentinelByte-logo.jpg
+
+social:
+  name: Dan Cohen Vaxman
+  links:
+    - https://github.com/SentinelByte
+    - https://www.linkedin.com/in/35b767173/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
