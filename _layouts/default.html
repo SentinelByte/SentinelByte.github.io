@@ -4,8 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="icon" type="image/jpeg" href="{{ '/assets/images/SentinelByte-logo.jpg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% seo %}
+  {% feed_meta %}
   <style>
     /* Desktop flex layout */
     .wrapper {
@@ -134,10 +136,10 @@
             <a href="{{ '/blog/' | relative_url }}">Tech Blog</a>
           </li>
           <li style="margin:4px 0;">
-            <a href="https://github.com/SentinelByte" target="_blank">GitHub &#8663 </a>
+            <a href="{{ '/about/' | relative_url }}">About</a>
           </li>
           <li style="margin:4px 0;">
-            <a href="https://sentinelbyte.github.io/publications/">Publications</a>
+            <a href="https://github.com/SentinelByte" target="_blank">GitHub &#8663 </a>
           </li>
         </ul>
       </nav>
