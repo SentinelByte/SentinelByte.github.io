@@ -1,24 +1,24 @@
-# SentinelByte Tech Blog
-Security Engineer | Automation Enthusiast | Cloud Defender
+# SentinelByte
+Security Engineering · Cloud & DevSecOps · AI/ML Security
 
 ---
 
-**SentinelByte.io** is a personal knowledge hub by **DanCohVax** — a Security Engineer focused on designing scalable, secure, and intelligent systems.
-It serves as a space to share technical insights, research, and practical experience from the cybersecurity and engineering domains.
+**SentinelByte** is the technical blog of **Dan Cohen Vaxman**, a Security Engineer specializing in cloud infrastructure hardening, CI/CD and DevSecOps automation, and AI/ML system security.
+This is where I publish deep-dive research, hands-on guides, and field notes from securing modern cloud and AI-driven systems.
 
 ---
 
 # Tech Blog Overview
 
-SentinelByte's Tech Blog is a collection of in-depth articles, tutorials, and resources covering a wide range of topics in cybersecurity, cloud architecture, automation, and advanced systems design. The content is designed to provide practical insights, best practices, and thought leadership for security professionals, engineers, and anyone interested in the intersection of technology and security.
+Articles and guides on cloud architecture, DevSecOps automation, threat modeling, and AI/ML security — written from hands-on engineering experience, for security professionals and engineers working at the intersection of the two.
 
-## 🔎 Investigative domains & Field Topics
+## Focus Areas
 
 {% include domains_grid.html %}
 
 ---
 
-## ✍️ Latest Tech Posts
+## Latest Posts
 
 {% include latest_post.html %}
 
@@ -42,16 +42,10 @@ SentinelByte's Tech Blog is a collection of in-depth articles, tutorials, and re
 
 ---
 
-### 🧰 Favorite Tech Stack
+### Core Tools & Stack
 
-- **Python & RestAPI** – for Agentic AI, scripting, automation, and backend logic  
-- **TS & JS** – for scalable frontend and service code  
-- **TF** – for secure and auditable infrastructure deployment (IaC)
-
-Beyond technology, SentinelByte also features a collection of original publications and ebooks, written to explore themes of **focus, growth, and personal development** — extending the pursuit of improvement beyond systems, into the human side of performance and clarity. 
-
-{% include publications_button.html %}
+- **Python & REST APIs** – for agentic AI, scripting, automation, and backend logic
+- **TypeScript & JavaScript** – for scalable frontend and service code
+- **Terraform** – for secure and auditable infrastructure deployment (IaC)
 
 > *“Build defensible systems, automate the boring, and stay ahead of the threat.”*
-
-> *“Refine your focus. Reclaim your energy. Real results follow.”*

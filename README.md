@@ -1,57 +1,39 @@
-# SentinelByte Tech Blog
-Security Engineer | Automation Enthusiast | Cloud Defender
+# SentinelByte
+Security Engineering · Cloud & DevSecOps · AI/ML Security
 
 ---
 
-**SentinelByte.io** is a personal knowledge hub by **DanCohVax** — a Security Engineer focused on designing scalable, secure, and intelligent systems.
-It serves as a space to share technical insights, research, and practical experience from the cybersecurity and engineering domains.
+**SentinelByte** is the technical blog of **Dan Cohen Vaxman**, a Security Engineer specializing in cloud infrastructure hardening, CI/CD and DevSecOps automation, and AI/ML system security.
+This is where I publish deep-dive research, hands-on guides, and field notes from securing modern cloud and AI-driven systems.
 
-Beyond technology, SentinelByte also features a collection of original publications and ebooks, written to explore themes of **focus, growth, and personal development** — extending the pursuit of improvement beyond systems, into the human side of performance and clarity. 
-
-{% include publications_button.html %}
+Live site: [sentinelbyte.github.io](https://sentinelbyte.github.io)
 
 ---
 
-# Tech Blog Overview
+## Tech Blog Overview
 
-SentinelByte's Tech Blog is a collection of in-depth articles, tutorials, and resources covering a wide range of topics in cybersecurity, cloud architecture, automation, and advanced systems design. The content is designed to provide practical insights, best practices, and thought leadership for security professionals, engineers, and anyone interested in the intersection of technology and security.
+Articles and guides on cloud architecture, DevSecOps automation, threat modeling, and AI/ML security — written from hands-on engineering experience, for security professionals and engineers working at the intersection of the two.
 
-## 🔎 Investigative domains & Field Topics
+**Focus areas:**
 
-{% include domains_grid.html %}
-
----
-
-## ✍️ Latest Tech Posts
-
-{% include latest_post.html %}
-
-<br>
-
-<p>Check out more posts on SentinelByte's Blog for up-to-date cybersecurity content, tech cheat sheets, write-ups, news, and field reports on topics ranging from:</p>
-
-<a href="/blog/" style="
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-">
-    SentinelByte's Blog »
-</a>
-
-{% include social_links.html %}
+- **Cyber & Threat** – MFA Bypass (AiTM), phishing, and deep-dives into modern scam mechanisms like Pig Butchering
+- **Cloud & Automation** – Hardening ML pipelines, CI/CD security audits, and configuration drift automation
+- **AI & Systems** – Defending Multi-Agent Systems (MAS) and exploring Model Context Protocols (MCPs)
+- **Security Engineering** – Infrastructure as Code (IaC) hardening and practical incident response (IR) strategies
 
 ---
 
-### 🧰 Favorite Tech Stack
+### Core Tools & Stack
 
-- **Python & RestAPI** – for Agentic AI, scripting, automation, and backend logic  
-- **TS & JS** – for scalable frontend and service code  
-- **TF** – for secure and auditable infrastructure deployment (IaC)
+- **Python & REST APIs** – for agentic AI, scripting, automation, and backend logic
+- **TypeScript & JavaScript** – for scalable frontend and service code
+- **Terraform** – for secure and auditable infrastructure deployment (IaC)
 
-> *“Build defensible systems, automate the boring, and stay ahead of the threat.”*
+---
 
-> *“Refine your focus. Reclaim your energy. Real results follow.”*
+## Connect
+
+- GitHub: [@SentinelByte](https://github.com/SentinelByte)
+- LinkedIn: [Dan Cohen Vaxman](https://www.linkedin.com/in/35b767173/)
+
+> *"Build defensible systems, automate the boring, and stay ahead of the threat."*
