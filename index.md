@@ -6,10 +6,6 @@ Security Engineer | Automation Enthusiast | Cloud Defender
 **SentinelByte.io** is a personal knowledge hub by **DanCohVax** — a Security Engineer focused on designing scalable, secure, and intelligent systems.
 It serves as a space to share technical insights, research, and practical experience from the cybersecurity and engineering domains.
 
-Beyond technology, SentinelByte also features a collection of original publications and ebooks, written to explore themes of **focus, growth, and personal development** — extending the pursuit of improvement beyond systems, into the human side of performance and clarity. 
-
-{% include publications_button.html %}
-
 ---
 
 # Tech Blog Overview
@@ -51,6 +47,10 @@ SentinelByte's Tech Blog is a collection of in-depth articles, tutorials, and re
 - **Python & RestAPI** – for Agentic AI, scripting, automation, and backend logic  
 - **TS & JS** – for scalable frontend and service code  
 - **TF** – for secure and auditable infrastructure deployment (IaC)
+
+Beyond technology, SentinelByte also features a collection of original publications and ebooks, written to explore themes of **focus, growth, and personal development** — extending the pursuit of improvement beyond systems, into the human side of performance and clarity. 
+
+{% include publications_button.html %}
 
 > *“Build defensible systems, automate the boring, and stay ahead of the threat.”*
 
