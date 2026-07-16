@@ -6,7 +6,7 @@ categories: DevSecOps
 author: Dan.C
 tags: [configuration-drift, auditing, automation, devsecops, security-engineering, compliance, infrastructure-as-code, monitoring]
 excerpt: "Practical guide for security engineers to automate auditing scripts that detect and remediate configuration drift in cloud and on-prem environments."
-cover: /assets/images/drift-no-more.png
+image: /assets/images/drift-no-more.png
 ---
 
 ![Cover Image](/assets/images/drift-no-more.png)

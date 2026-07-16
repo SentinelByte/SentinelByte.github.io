@@ -6,7 +6,7 @@ categories: red-team
 author: Dan.C
 tags: [evilginx, phishing, AiTM, adversary-in-the-middle, mfa-bypass, session-hijacking, cybersecurity]
 excerpt: "A technical overview of Evilginx, how it works, why attackers use it to bypass MFA, and how defenders can detect and mitigate it."
-cover: /assets/images/evilginx-overview.jpg
+image: /assets/images/evilginx-overview.jpg
 ---
 ![Cover Image](/assets/images/evilginx-overview.jpg)
 

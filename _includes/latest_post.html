@@ -3,9 +3,9 @@
 {% assign latest_post = site.posts.first %}
 <div class="blog-container" style="max-width: 800px; margin-top: 1rem;">
   <div class="blog-card" style="margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 1px solid #eee;">
-    {% if latest_post.cover %}
+    {% if latest_post.image %}
       <a href="{{ latest_post.url | relative_url }}">
-        <img src="{{ latest_post.cover | relative_url }}" alt="{{ latest_post.title }} cover image" style="width: 100%; height: auto; border-bottom: 1px solid #eee;">
+        <img src="{{ latest_post.image | relative_url }}" alt="{{ latest_post.title }} cover image" style="width: 100%; height: auto; border-bottom: 1px solid #eee;">
       </a>
     {% endif %}
     <div class="blog-content" style="padding: 1.5rem;">

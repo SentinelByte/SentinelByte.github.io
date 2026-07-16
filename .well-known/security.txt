@@ -1,0 +1,5 @@
+Contact: https://github.com/SentinelByte/SentinelByte.github.io/issues
+Contact: https://www.linkedin.com/in/35b767173/
+Preferred-Languages: en
+Canonical: https://sentinelbyte.github.io/.well-known/security.txt
+Expires: 2027-07-15T00:00:00.000Z
