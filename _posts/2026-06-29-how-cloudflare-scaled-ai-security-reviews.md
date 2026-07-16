@@ -12,8 +12,8 @@ image: /assets/images/cloudfalre-ai.jpg
 ![Cover Image](/assets/images/cloudfalre-ai.jpg)
 
 ## How Cloudflare Scaled AI Security Reviews Beyond PRs
-=======
---------------------------------------------------------
+
+---
 
 ## Table of Contents
 
