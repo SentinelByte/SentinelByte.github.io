@@ -141,6 +141,9 @@
           <li style="margin:4px 0;">
             <a href="https://github.com/SentinelByte" target="_blank">GitHub &#8663 </a>
           </li>
+          <li style="margin:4px 0;">
+            <a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a>
+          </li>
         </ul>
       </nav>
 
@@ -163,6 +166,10 @@
 
 
   </div>
+
+  <footer style="text-align:center; padding:20px; color:#777; font-size:0.85rem;">
+    &copy; {{ site.time | date: "%Y" }} {{ site.author }}. All rights reserved.
+  </footer>
 </body>
 
 </html>
