@@ -6,7 +6,7 @@ categories: ai-security
 author: Dan.C
 tags: [cloudflare, ai, llm, appsec, security-engineering, devsecops, hitl, ai-agents]
 excerpt: "An analysis of Cloudflare's approach to scaling AI-powered security reviews beyond pull requests through automated discovery, validation, remediation, and human-in-the-loop workflows."
-cover: /assets/images/cloudfalre-ai.jpg
+image: /assets/images/cloudfalre-ai.jpg
 ---
 
 ![Cover Image](/assets/images/cloudfalre-ai.jpg)

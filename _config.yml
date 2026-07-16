@@ -15,7 +15,13 @@ social:
     - https://github.com/SentinelByte
     - https://www.linkedin.com/in/35b767173/
 
+twitter:
+  card: summary_large_image
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+
+include:
+  - .well-known

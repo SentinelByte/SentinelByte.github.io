@@ -6,7 +6,7 @@ categories: DevSecOps
 author: Dan.C
 tags: [github, devsecops, access-control, secrets-management, org-security, ci-cd, GitHub Security]
 excerpt: "Hands-on guide for engineers to implement secure GitHub organizational access & secrets management at scale."
-cover: /assets/images/github-access-control.png
+image: /assets/images/github-access-control.png
 ---
 
 ![Cover Image](/assets/images/github-access-control.png)

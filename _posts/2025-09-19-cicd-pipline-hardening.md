@@ -6,7 +6,7 @@ categories: DevSecOps
 author: Dan.C
 tags: [ci-cd, github-actions, gitlab-ci, devsecops, security, pipeline-hardening, pipeline-security]
 excerpt: "Comprehensive guide to building secure and hardened CI/CD pipelines using GitHub Actions and GitLab CI/CD for DevSecOps teams."
-cover: /assets/images/cicd-hardening.png
+image: /assets/images/cicd-hardening.png
 ---
 
 ![Cover Image](/assets/images/cicd-hardening.png)

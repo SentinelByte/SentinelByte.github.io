@@ -6,7 +6,7 @@ categories: Threat-Modeling
 author: Dan.C
 tags: [threat-modeling, STRIDE, MITRE, PASTA, CVSS, TMaaC, security]
 excerpt: "A comprehensive beginner-friendly guide to the most important threat modeling frameworks in cybersecurity."
-cover: /assets/images/cyberThreatModeling.jpg
+image: /assets/images/cyberThreatModeling.jpg
 ---
 ![Cover Image](/assets/images/cyberThreatModeling.jpg)
 

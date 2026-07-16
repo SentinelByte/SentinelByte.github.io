@@ -6,7 +6,7 @@ categories: DevSecOps
 author: Dan.C
 tags: [ai-security, ml-security, pytorch, sagemaker, devsecops, ai-risk, supply-chain-security, model-security]
 excerpt: "Comprehensive guide to understanding, securing, and hardening AI/ML pipelines in both open-source and cloud environments for security engineers."
-cover: /assets/images/ai-security.jpg
+image: /assets/images/ai-security.jpg
 ---
 
 ![Cover Image](/assets/images/ai-security.jpg)

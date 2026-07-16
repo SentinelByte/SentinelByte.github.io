@@ -6,7 +6,7 @@ categories: social-engineering
 author: Dan.C
 tags: [social-engineering, scam, fraud, awerness, cybersecurity, crypto]
 excerpt: "A breakdown of the rising crypto investment scams known as 'Pig Butchering' how they work, red flags to watch for, and how to protect yourself from social engineering-driven financial fraud"
-cover: /assets/images/pig-butchering-scams.jpg
+image: /assets/images/pig-butchering-scams.jpg
 ---
 ![Cover Image](/assets/images/pig-butchering-scams.jpg)
 

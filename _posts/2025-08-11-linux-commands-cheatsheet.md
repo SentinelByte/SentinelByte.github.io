@@ -6,7 +6,7 @@ categories: linux
 author: Dan.C
 tags: [linux, terminal, cheat-sheet, command-line, sysadmin, devops]
 excerpt: "A practical reference for essential Linux commands every developer, sysadmin, or security engineer should know—organized for speed, efficiency, and daily use"
-cover: /assets/images/linux-cheatsheet.jpg
+image: /assets/images/linux-cheatsheet.jpg
 ---
 ![Cover Image](/assets/images/linux-cheatsheet.jpg)
 
