@@ -9,29 +9,40 @@
   {% seo %}
   {% feed_meta %}
   <style>
-    /* Desktop flex layout */
+    /* Desktop grid layout */
     .wrapper {
-      display: flex;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "sidebar content"
+        "footer  footer";
       min-height: 100vh;
-      flex-wrap: nowrap;
       max-width: 1200px;
       margin: 0 auto;
     }
 
     .sidebar {
-      width: 300px;
+      grid-area: sidebar;
       padding: 20px;
       box-sizing: border-box;
       text-align: center;
-      flex-shrink: 0;
     }
 
     .content {
-      flex: 1;
+      grid-area: content;
       padding: 40px;
       box-sizing: border-box;
       text-align: left;
-      min-width: 0; /* Prevents flex items from overflowing */
+      min-width: 0; /* Prevents grid items from overflowing */
+    }
+
+    .site-footer {
+      grid-area: footer;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.85rem;
     }
 
     /* Ensure code blocks and images don't break layout */
@@ -83,16 +94,18 @@
     /* Responsive: stack on mobile */
     @media screen and (max-width: 768px) {
       .wrapper {
-        display: block;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "sidebar"
+          "content"
+          "footer";
       }
 
       .sidebar {
-        width: 100%;
         margin-bottom: 20px;
       }
 
       .content {
-        width: 100%;
         padding: 20px;
       }
 
@@ -164,12 +177,12 @@
         {{ content }}
     </main>
 
+    <!-- Footer -->
+    <footer class="site-footer">
+      &copy; {{ site.time | date: "%Y" }} {{ site.author }}. All rights reserved.
+    </footer>
 
   </div>
-
-  <footer style="text-align:center; padding:20px; color:#777; font-size:0.85rem;">
-    &copy; {{ site.time | date: "%Y" }} {{ site.author }}. All rights reserved.
-  </footer>
 </body>
 
 </html>
