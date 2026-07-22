@@ -17,7 +17,7 @@ image: /assets/images/agentic-memory.jpg
 
 ## Table of Contents
 
-1. [Executive Summary](#executive-summary)
+1. [Why This Matters](#why-this-matters)
 2. [Agentic Architecture and Trust Boundaries](#agentic-architecture-and-trust-boundaries)
 3. [Memory as a Control Plane](#memory-as-a-control-plane)
 4. [Attack Taxonomy: Write-Time Poisoning](#attack-taxonomy-write-time-poisoning)
@@ -32,7 +32,7 @@ image: /assets/images/agentic-memory.jpg
 
 ---
 
-## Executive Summary
+## Why This Matters
 
 The security community spent years hardening prompt injection as a point-in-time attack: a user sends a malicious input, the model responds in an unintended way, the interaction ends.
 
