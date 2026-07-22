@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Memory Poisoning in Agentic AI: When Persistent State Becomes a Control Plane Vulnerability"
-date: 2026-07-23
+date: 2026-07-22
 categories: ai-security
 author: Dan.C
 tags: [ai-security, agentic-ai, llm, memory-poisoning, prompt-injection, appsec, security-engineering, rag, identity, authorization]
