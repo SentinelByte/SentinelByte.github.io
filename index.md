@@ -44,8 +44,6 @@ Articles and guides on cloud architecture, DevSecOps automation, threat modeling
 
 ### Core Tools & Stack
 
-- **Python & REST APIs** – for agentic AI, scripting, automation, and backend logic
-- **TypeScript & JavaScript** – for scalable frontend and service code
-- **Terraform** – for secure and auditable infrastructure deployment (IaC)
+{% include tool_stack.html %}
 
 > *“Build defensible systems, automate the boring, and stay ahead of the threat.”*
