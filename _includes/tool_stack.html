@@ -1,53 +1,80 @@
-<div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0;">
+<style>
+.tool-stack {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin: 12px 0;
+}
+@media (max-width: 640px) {
+  .tool-stack {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.tool-stack-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fafafa;
+}
+.tool-stack-chip .logo-box {
+  height: 44px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tool-stack-chip .logo-box img {
+  max-height: 44px;
+  max-width: 100%;
+  object-fit: contain;
+}
+.tool-stack-chip .chip-label {
+  font-size: 11px;
+  color: #666;
+  font-weight: 500;
+  text-align: center;
+}
+</style>
 
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;
-              border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px 14px;
-              background: #fafafa; min-width: 90px; flex: 1; max-width: 140px;">
-    <div style="height: 44px; width: 100%; display: flex; align-items: center; justify-content: center;">
-      <img src="/assets/logos/py.png" alt="Python"
-           style="max-height: 44px; max-width: 100%; object-fit: contain;">
+<div class="tool-stack">
+
+  <div class="tool-stack-chip">
+    <div class="logo-box">
+      <img src="/assets/logos/py.png" alt="Python">
     </div>
-    <span style="font-size: 11px; color: #666; font-weight: 500; text-align: center; white-space: nowrap;">Python</span>
+    <span class="chip-label">Python</span>
   </div>
 
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;
-              border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px 14px;
-              background: #fafafa; min-width: 90px; flex: 1; max-width: 140px;">
-    <div style="height: 44px; width: 100%; display: flex; align-items: center; justify-content: center;">
-      <img src="/assets/logos/rest-api.png" alt="REST APIs"
-           style="max-height: 44px; max-width: 100%; object-fit: contain;">
+  <div class="tool-stack-chip">
+    <div class="logo-box">
+      <img src="/assets/logos/rest-api.png" alt="REST APIs">
     </div>
-    <span style="font-size: 11px; color: #666; font-weight: 500; text-align: center; white-space: nowrap;">REST APIs</span>
+    <span class="chip-label">REST APIs</span>
   </div>
 
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;
-              border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px 14px;
-              background: #fafafa; min-width: 90px; flex: 1; max-width: 140px;">
-    <div style="height: 44px; width: 100%; display: flex; align-items: center; justify-content: center;">
-      <img src="/assets/logos/ts.png" alt="TypeScript"
-           style="max-height: 44px; max-width: 100%; object-fit: contain;">
+  <div class="tool-stack-chip">
+    <div class="logo-box">
+      <img src="/assets/logos/ts.png" alt="TypeScript">
     </div>
-    <span style="font-size: 11px; color: #666; font-weight: 500; text-align: center; white-space: nowrap;">TypeScript</span>
+    <span class="chip-label">TypeScript</span>
   </div>
 
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;
-              border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px 14px;
-              background: #fafafa; min-width: 90px; flex: 1; max-width: 140px;">
-    <div style="height: 44px; width: 100%; display: flex; align-items: center; justify-content: center;">
-      <img src="/assets/logos/js.png" alt="JavaScript"
-           style="max-height: 44px; max-width: 100%; object-fit: contain;">
+  <div class="tool-stack-chip">
+    <div class="logo-box">
+      <img src="/assets/logos/js.png" alt="JavaScript">
     </div>
-    <span style="font-size: 11px; color: #666; font-weight: 500; text-align: center; white-space: nowrap;">JavaScript</span>
+    <span class="chip-label">JavaScript</span>
   </div>
 
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;
-              border: 1px solid #e0e0e0; border-radius: 8px; padding: 10px 14px;
-              background: #fafafa; min-width: 90px; flex: 1; max-width: 140px;">
-    <div style="height: 44px; width: 100%; display: flex; align-items: center; justify-content: center;">
-      <img src="/assets/logos/tf.png" alt="Terraform"
-           style="max-height: 44px; max-width: 100%; object-fit: contain;">
+  <div class="tool-stack-chip">
+    <div class="logo-box">
+      <img src="/assets/logos/tf.png" alt="Terraform">
     </div>
-    <span style="font-size: 11px; color: #666; font-weight: 500; text-align: center; white-space: nowrap;">Terraform</span>
+    <span class="chip-label">Terraform</span>
   </div>
 
 </div>
