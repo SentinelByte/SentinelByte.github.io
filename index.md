@@ -42,7 +42,7 @@ Articles and guides on cloud architecture, DevSecOps automation, threat modeling
 
 ---
 
-### Core Tools & Stack
+### Core Stack
 
 {% include tool_stack.html %}
 
