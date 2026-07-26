@@ -6,18 +6,18 @@ permalink: /about/
 
 # About
 
-I'm **Dan Cohen Vaxman**, a Senior Security Engineer with 6 years of experience spanning incident response, cloud security, offensive security, and security automation. I work across the full lifecycle — proactively hardening systems and hunting for weaknesses, then responding fast when something slips through.
+I'm **Dan Cohen Vaxman**, Senior Security Engineer with 6 years of experience in incident response, cloud security, offensive security, and AI-driven security automation. I build scalable detection, response, and remediation workflows that reduce manual effort and accelerate security operations. I proactively harden systems, uncover weaknesses, and lead rapid incident response when threats emerge. **Welcome to my tech blog.**
 
 ## Core Expertise
 
-- **Incident Response** – triage, containment, and post-incident hardening
-- **Cloud Security** – securing cloud-native infrastructure and IaC at scale
-- **Offensive Security** – web and infrastructure penetration testing
-- **Vulnerability Management** – discovery, prioritization, and remediation
+- **Incident Response** – Triage, containment, and post-incident hardening
+- **Cloud Security** – Securing cloud-native infrastructure and IaC at scale
+- **Offensive Security** – Web and infrastructure penetration testing
+- **Vulnerability Management** – Discovery, prioritization, and remediation
 - **Security Automation & DevSecOps** – CI/CD hardening, drift detection, automated audits
-- **AI Security** – hardening AI/ML pipelines and agentic systems
+- **AI Security** – Hardening AI/ML pipelines and agentic systems
 
-### Core Stack
+## Core Stack
 
 {% include tool_stack.html %}
 
