@@ -17,9 +17,9 @@ I'm **Dan Cohen Vaxman**, a Senior Security Engineer with 6 years of experience 
 - **Security Automation & DevSecOps** – CI/CD hardening, drift detection, automated audits
 - **AI Security** – hardening AI/ML pipelines and agentic systems
 
-## Languages & Tooling
+### Core Stack
 
-Python · Terraform · Bash · SQL · jq · TypeScript
+{% include tool_stack.html %}
 
 ---
 
