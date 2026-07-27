@@ -472,17 +472,17 @@ For each boundary, ask:
 
 Use this as a pre-deployment review gate for agentic systems:
 
-* [ ] Memory namespaces are isolated per tenant and per agent role
-* [ ] No authorization decision is derived from agent memory
-* [ ] Agent credentials are task-scoped and session-limited
-* [ ] Memory writes are validated and logged with source attribution
-* [ ] Memory reads that precede high-blast-radius actions are logged
-* [ ] Tool execution is gated by an external policy engine
-* [ ] High-blast-radius actions require human approval
-* [ ] Sub-agent outputs are not directly trusted by orchestrating agents
-* [ ] RAG document ingestion pipelines include provenance validation
-* [ ] Behavioral anomaly detection is in place for tool call patterns
-* [ ] Incident response runbook exists for memory poisoning scenarios
+[ ] Memory namespaces are isolated per tenant and per agent role
+[ ] No authorization decision is derived from agent memory
+[ ] Agent credentials are task-scoped and session-limited
+[ ] Memory writes are validated and logged with source attribution
+[ ] Memory reads that precede high-blast-radius actions are logged
+[ ] Tool execution is gated by an external policy engine
+[ ] High-blast-radius actions require human approval
+[ ] Sub-agent outputs are not directly trusted by orchestrating agents
+[ ] RAG document ingestion pipelines include provenance validation
+[ ] Behavioral anomaly detection is in place for tool call patterns
+[ ] Incident response runbook exists for memory poisoning scenarios
 
 ---
 
