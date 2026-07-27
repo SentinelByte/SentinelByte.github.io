@@ -60,33 +60,10 @@ Before mapping attacks, it is worth establishing what an agentic system actually
 
 A minimal reference architecture contains these components:
 
-```text
-┌─────────────────────────────────────────────────────────────┐
-│                        External World                       │
-│  User Input │ External APIs │ Documents │ Tool Outputs      │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-                         ▼
-┌─────────────────────────────────────────────────────────────┐
-│                      Agent Runtime                          │
-│                                                             │
-│   ┌─────────────┐    ┌──────────────┐    ┌─────────────┐  │
-│   │   Planner   │───▶│Context Window│◀───│   Memory    │  │
-│   │  (LLM Core) │    │  (Working    │    │   Store     │  │
-│   └──────┬──────┘    │   Memory)    │    │(Persistence)│  │
-│          │           └──────────────┘    └─────────────┘  │
-│          ▼                                                  │
-│   ┌─────────────┐                                          │
-│   │ Tool Router │                                          │
-│   └──────┬──────┘                                          │
-└──────────┼──────────────────────────────────────────────────┘
-           │
-           ▼
-┌─────────────────────────────────────────────────────────────┐
-│                     Tool Execution Layer                    │
-│  File System │ APIs │ Databases │ Shell │ Sub-Agents        │
-└─────────────────────────────────────────────────────────────┘
-```
+<figure>
+  <img src="/assets/images/agentic-architecture-overview.png" alt="Agentic Architecture Overview">
+  <figcaption>Agentic Architecture Overview</figcaption>
+</figure>
 
 Trust boundaries in this architecture are non-obvious.
 
