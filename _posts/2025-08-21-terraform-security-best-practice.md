@@ -128,5 +128,4 @@ Want more? I’ll soon publish a secure AWS Terraform project template with buil
 
 ---
 
-*Stay sharp, stay secure.*
-— Dan.C
+*Stay sharp, stay secure.* — Dan.C

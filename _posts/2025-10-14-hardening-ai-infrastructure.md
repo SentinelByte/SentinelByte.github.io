@@ -206,5 +206,4 @@ By applying **least privilege, environment isolation, dependency verification, a
 
 ---
 
-*AI systems are only as secure as the pipelines that build, deploy, and maintain them.*
-— Dan.C
+*AI systems are only as secure as the pipelines that build, deploy, and maintain them.* — Dan.C

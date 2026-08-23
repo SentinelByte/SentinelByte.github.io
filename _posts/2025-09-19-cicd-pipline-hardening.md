@@ -329,5 +329,4 @@ Implementing these practices ensures automation **enhances productivity without 
 
 ---
 
-*Fast delivery shouldn’t mean fragile security.*
-— Dan.C
+*Fast delivery shouldn’t mean fragile security.* — Dan.C

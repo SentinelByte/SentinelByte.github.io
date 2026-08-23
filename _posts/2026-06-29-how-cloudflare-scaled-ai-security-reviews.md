@@ -282,6 +282,4 @@ For security engineers, that may be the most important lesson of all.
 
 ---
 
-*Stay curious. Keep building.*
-
-* Dan.C
+*Design the workflow, not just the model.* — Dan.C
