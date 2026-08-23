@@ -77,23 +77,13 @@ Rather than optimizing the Skill further, they transformed it into an automated 
 
 A simplified view of the workflow looks like this:
 
-```text
-Repository Analysis
-        │
-        ▼
-Vulnerability Discovery
-        │
-        ▼
-Finding Validation
-        │
-        ▼
-Fix Generation
-        │
-        ▼
-Pull Request Creation
-        │
-        ▼
-Human Approval
+```mermaid
+flowchart TD
+    A[Repository Analysis] --> B[Vulnerability Discovery]
+    B --> C[Finding Validation]
+    C --> D[Fix Generation]
+    D --> E[Pull Request Creation]
+    E --> F[Human Approval]
 ```
 
 This approach shifts the focus away from individual pull requests and toward organization-wide security visibility.
@@ -149,13 +139,9 @@ One particularly interesting design choice is the use of a separate model for va
 
 Rather than relying entirely on the original model's conclusions, Cloudflare introduces a second validation stage.
 
-```text
-Model A
-Discovers Findings
-        │
-        ▼
-Model B
-Validates Findings
+```mermaid
+flowchart TD
+    A["Model A\nDiscovers Findings"] --> B["Model B\nValidates Findings"]
 ```
 
 The second model attempts to verify reported vulnerabilities and increase confidence in the results.
