@@ -18,6 +18,9 @@ social:
 twitter:
   card: summary_large_image
 
+kramdown:
+  input: GFM
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
