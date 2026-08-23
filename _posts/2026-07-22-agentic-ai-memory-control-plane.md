@@ -510,6 +510,4 @@ The organizations that secure agentic systems effectively will not be the ones t
 
 ---
 
-*Stay curious. Keep building.*
-
-— Dan.C
+*Old discipline, new attack surface.* — Dan.C

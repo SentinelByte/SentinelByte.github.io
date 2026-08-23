@@ -153,5 +153,4 @@ Reference guide to the most essential Linux commands — ideal for sys admins, d
 
 ---
 
-*Stay efficient. Stay secure.*
-- Dan.C
+*Stay efficient. Stay secure.* — Dan.C

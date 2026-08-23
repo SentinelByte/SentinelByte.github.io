@@ -360,5 +360,4 @@ Configuration drift is a hidden risk that can silently undermine security and st
 
 ---
 
-*Drift detection is not optional—it’s a cornerstone of modern security engineering.*
-— Dan.C
+*Drift detection is not optional—it’s a cornerstone of modern security engineering.* — Dan.C

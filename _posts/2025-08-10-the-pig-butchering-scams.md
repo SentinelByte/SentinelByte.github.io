@@ -91,5 +91,4 @@ Pig Butchering Scams represent a tragic intersection of financial fraud and huma
 
 ---
 
-*Stay vigilant. Stay informed.*
-- Dan.C
+*Stay vigilant. Stay informed.* — Dan.C
