@@ -1,0 +1,117 @@
+{% comment %}
+  Lazy-loads a file from the repo and renders it as a syntax-highlighted code block.
+
+  Usage:
+    {% include code-embed.html
+       file="scripts/2026-08-23-zero-click-ai-vulnerability-email-injection/policy_engine.py"
+       title="policy_check()"
+       start=18 end=44 %}
+
+  Parameters:
+    file  (required) — repo-relative path
+    title (optional) — display label; defaults to the file path
+    start (optional) — first line to show (1-indexed, inclusive)
+    end   (optional) — last line to show (1-indexed, inclusive)
+{% endcomment %}
+
+{% assign _ce_raw = "https://raw.githubusercontent.com/SentinelByte/SentinelByte.github.io/main/" | append: include.file %}
+{% assign _ce_gh  = "https://github.com/SentinelByte/SentinelByte.github.io/blob/main/" | append: include.file %}
+{% assign _ce_lbl = include.title | default: include.file %}
+
+<div class="code-embed"
+  data-src="{{ _ce_raw }}"
+  {% if include.start %}data-start="{{ include.start }}"{% endif %}
+  {% if include.end %}data-end="{{ include.end }}"{% endif %}>
+  <div class="code-embed-header">
+    <span class="code-embed-label">{{ _ce_lbl }}</span>
+    <a class="code-embed-link" href="{{ _ce_gh }}" target="_blank" rel="noopener noreferrer">View full file ↗</a>
+  </div>
+  <pre class="code-embed-pre"><code class="code-embed-code">Loading…</code></pre>
+</div>
+
+<style>
+  .code-embed {
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    margin: 1.5em 0;
+    overflow: hidden;
+    font-size: 0.875rem;
+  }
+  .code-embed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f6f8fa;
+    border-bottom: 1px solid #d0d7de;
+    padding: 6px 14px;
+  }
+  .code-embed-label {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.8rem;
+    color: #24292f;
+    font-weight: 600;
+  }
+  .code-embed-link {
+    font-size: 0.78rem;
+    color: #0969da;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .code-embed-link:hover { text-decoration: underline; }
+  .code-embed-pre {
+    margin: 0;
+    padding: 16px;
+    background: #f6f8fa;
+    overflow-x: auto;
+    border-radius: 0;
+  }
+  .code-embed-code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: #24292f;
+    white-space: pre;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  .code-embed[data-error] .code-embed-code { color: #cf222e; }
+</style>
+
+<script>
+(function () {
+  function loadEmbed(el) {
+    if (el.dataset.ceLoaded) return;
+    el.dataset.ceLoaded = '1';
+
+    var src   = el.dataset.src;
+    var start = el.dataset.start ? parseInt(el.dataset.start, 10) - 1 : 0;
+    var end   = el.dataset.end   ? parseInt(el.dataset.end,   10)     : undefined;
+    var code  = el.querySelector('.code-embed-code');
+
+    fetch(src)
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.text();
+      })
+      .then(function (text) {
+        var lines = text.split('\n');
+        code.textContent = lines.slice(start, end).join('\n').trimEnd();
+      })
+      .catch(function (err) {
+        el.dataset.error = '1';
+        code.textContent = '// Could not load: ' + src + '\n// ' + err.message;
+      });
+  }
+
+  function initAll() {
+    document.querySelectorAll('.code-embed[data-src]').forEach(loadEmbed);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll);
+  } else {
+    initAll();
+  }
+})();
+</script>
