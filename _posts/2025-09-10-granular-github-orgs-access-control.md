@@ -155,18 +155,7 @@ Manual clicks don’t scale. Automation ensures **consistency, auditability, and
 
 **Example: Terraform team + repo assignment**
 
-```hcl
-resource "github_team" "security" {
-  name        = "security"
-  description = "Security team"
-}
-
-resource "github_team_repository" "security_repo_access" {
-  team_id    = github_team.security.id
-  repository = "critical-service"
-  permission = "admin"
-}
-```
+{% include code-embed.html file="scripts/2025-09-10-granular-github-orgs-access-control/team_access.tf" title="team_access.tf" %}
 
 ## Secrets Management Best Practices
 
@@ -182,22 +171,7 @@ Replace static cloud credentials with **short-lived OIDC tokens**.
 
 **AWS Example**
 
-```yaml
-permissions:
-  id-token: write
-  contents: read
-
-jobs:
- deploy:
-  runs-on: ubuntu-latest
-   steps:
-    - uses: actions/checkout@v4
-    - name: Configure AWS creds via OIDC
-     uses: aws-actions/configure-aws-credentials@v4
-     with:
-      role-to-assume: arn:aws:iam::123456789012:role/GitHubActionsRole
-      aws-region: eu-central-1
-```
+{% include code-embed.html file="scripts/2025-09-10-granular-github-orgs-access-control/oidc_workflow.yml" title="oidc_workflow.yml" %}
 
 
 ## Auditing and Monitoring with the Audit Log API

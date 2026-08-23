@@ -83,16 +83,7 @@ Create a new folder and a file called `main.tf`.
 
 Inside `main.tf`, write:
 
-```hcl
-provider "aws" {
-  region = "us-east-1"
-}
-
-resource "aws_s3_bucket" "demo" {
-  bucket = "my-terraform-demo-bucket-12345"
-  acl    = "private"
-}
-```
+{% include code-embed.html file="scripts/2025-08-28-master-terraform-fast/main.tf" title="main.tf" %}
 
 **What this does:**
 
@@ -156,14 +147,7 @@ Terraform removes everything it created. This is super useful for keeping cloud 
 
 Instead of hardcoding values, make them dynamic:
 
-```hcl
-variable "region" {
-  default = "us-east-1"
-}
-provider "aws" {
-  region = var.region
-}
-```
+{% include code-embed.html file="scripts/2025-08-28-master-terraform-fast/variables.tf" title="variables.tf" %}
 
 Run with custom variables:
 
@@ -175,11 +159,7 @@ terraform apply -var="region=eu-west-1"
 
 Show useful information after deployment:
 
-```hcl
-output "bucket_name" {
-  value = aws_s3_bucket.demo.bucket
-}
-```
+{% include code-embed.html file="scripts/2025-08-28-master-terraform-fast/outputs.tf" title="outputs.tf" %}
 
 View outputs:
 
@@ -201,12 +181,7 @@ They package resources into reusable blocks.
 
 Example:
 
-```hcl
-module "network" {
-  source     = "./modules/network"
-  cidr_block = "10.0.0.0/16"
-}
-```
+{% include code-embed.html file="scripts/2025-08-28-master-terraform-fast/modules.tf" title="modules.tf" %}
 
 This lets you structure large projects cleanly.
 
