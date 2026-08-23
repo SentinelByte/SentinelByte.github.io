@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% seo %}
   {% feed_meta %}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: false, theme: 'default' });
+    document.addEventListener('DOMContentLoaded', async function () {
+      document.querySelectorAll('code.language-mermaid').forEach(function (code) {
+        var outer = code.closest('.language-mermaid') || code.closest('pre') || code.parentNode;
+        var div = document.createElement('div');
+        div.className = 'mermaid';
+        div.textContent = code.textContent;
+        outer.replaceWith(div);
+      });
+      await mermaid.run();
+    });
+  </script>
   <style>
     /* Desktop grid layout */
     .wrapper {
