@@ -124,29 +124,7 @@ GitHub Actions allows automation **directly in GitHub**, with workflows defined 
 
 ### Basic Workflow Structure
 
-```yaml
-name: CI Pipeline
-
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run tests
-        run: npm test
-````
+{% include code-embed.html file="scripts/2025-09-19-cicd-pipeline-hardening/github_actions_ci.yml" title="github_actions_ci.yml" %}
 
 **Explanation:**
 
@@ -161,18 +139,7 @@ jobs:
 
 Never store secrets in code. Use **GitHub encrypted secrets**:
 
-```yaml
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-```
+{% include code-embed.html file="scripts/2025-09-19-cicd-pipeline-hardening/github_actions_deploy.yml" title="github_actions_deploy.yml" %}
 
 **Why:**
 
@@ -226,38 +193,7 @@ Configured via `.gitlab-ci.yml` in repo root.
 
 ### Basic Workflow Structure
 
-```yaml
-stages:
-  - build
-  - test
-  - deploy
-
-build:
-  stage: build
-  image: node:20
-  script:
-    - npm ci
-    - npm run build
-  artifacts:
-    paths:
-      - dist/
-
-test:
-  stage: test
-  image: node:20
-  script:
-    - npm test
-  dependencies:
-    - build
-
-deploy:
-  stage: deploy
-  image: amazon/aws-cli:2.13.3
-  script:
-    - aws s3 sync ./dist s3://my-bucket --delete
-  only:
-    - main
-```
+{% include code-embed.html file="scripts/2025-09-19-cicd-pipeline-hardening/gitlab_ci_pipeline.yml" title="gitlab_ci_pipeline.yml" %}
 
 **Explanation:**
 
@@ -272,18 +208,7 @@ deploy:
 
 GitLab uses **CI/CD variables**:
 
-```yaml
-deploy:
-  stage: deploy
-  script:
-    - echo "Deploying..."
-    - aws s3 sync ./dist s3://my-bucket --delete
-  only:
-    - main
-  variables:
-    AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
-    AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-```
+{% include code-embed.html file="scripts/2025-09-19-cicd-pipeline-hardening/gitlab_ci_secrets.yml" title="gitlab_ci_secrets.yml" %}
 
 **Best practices:**
 

@@ -158,12 +158,7 @@ Allows writing tests for infrastructure configurations in a human-readable way.
 Can check servers, cloud resources, and more.
 
 Example:
-```ruby
-describe aws_s3_bucket('my-bucket') do
-    it { should exist }
-    it { should_not be_public }
-end
-```
+{% include code-embed.html file="scripts/2025-12-09-drift-no-more-automate-security-audits/inspec_s3.rb" title="inspec_s3.rb" %}
 
 **Ansible + `ansible-playbook --check`**  
 Simulates configuration changes without applying them.  
@@ -187,15 +182,7 @@ Continuously monitors AWS resource configurations.
 Allows defining **rules** to detect non-compliant resources.
 
 Example: Detect S3 buckets without encryption.
-```json
-{
-    "ConfigRuleName": "s3-bucket-encrypted",
-    "Source": {
-    "Owner": "AWS",
-    "SourceIdentifier": "S3_BUCKET_SERVER_SIDE_ENCRYPTION_ENABLED"
-    }
-}
-```
+{% include code-embed.html file="scripts/2025-12-09-drift-no-more-automate-security-audits/aws_config_rule.json" title="aws_config_rule.json" %}
 
 **AWS CloudTrail + CloudWatch**  
 Tracks API activity and changes across AWS services.  
@@ -226,30 +213,7 @@ Key principles for effective scripts:
 
 Python is popular for writing drift detection scripts due to its rich ecosystem and cloud SDKs.
 
-```python
-## drift_check.py
-import boto3
-
-## Initialize AWS S3 client
-s3 = boto3.client('s3')
-
-## Desired state: All buckets must have server-side encryption enabled
-desired_state = True
-
-## Fetch all S3 buckets
-buckets = s3.list_buckets()['Buckets']
-
-for bucket in buckets:
-    bucket_name = bucket['Name']
-    try:
-        enc = s3.get_bucket_encryption(Bucket=bucket_name)
-        status = True
-    except s3.exceptions.ClientError:
-        status = False
-
-    if status != desired_state:
-        print(f"DRIFT DETECTED: Bucket '{bucket_name}' encryption is not enabled!")
-```
+{% include code-embed.html file="scripts/2025-12-09-drift-no-more-automate-security-audits/drift_check.py" title="drift_check.py" %}
 
 Explanation:
 
@@ -262,22 +226,7 @@ Explanation:
 
 For quick audits or integration into CI/CD, shell scripts can be useful:
 
-```bash
-#!/bin/bash
-
-## Desired: All Docker containers running specific version
-DESIRED_IMAGE="nginx:1.25"
-
-for container in $(docker ps --format '{{.Names}}'); do
-    image=$(docker inspect --format='{{.Config.Image}}' $container)
-    if [ "$image" != "$DESIRED_IMAGE" ]; then
-        echo "DRIFT DETECTED:"
-        echo "Container $container"
-        echo "running $image instead of $DESIRED_IMAGE"
-        echo "---"
-    fi
-done
-```
+{% include code-embed.html file="scripts/2025-12-09-drift-no-more-automate-security-audits/docker_drift_check.sh" title="docker_drift_check.sh" %}
 
 Explanation:
 

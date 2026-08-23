@@ -1,0 +1,30 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  image: node:20
+  script:
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+
+test:
+  stage: test
+  image: node:20
+  script:
+    - npm test
+  dependencies:
+    - build
+
+deploy:
+  stage: deploy
+  image: amazon/aws-cli:2.13.3
+  script:
+    - aws s3 sync ./dist s3://my-bucket --delete
+  only:
+    - main
