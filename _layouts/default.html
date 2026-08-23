@@ -71,8 +71,14 @@
       max-width: 100%;
       height: auto;
       overflow-x: auto;
-      white-space: pre-wrap; /* Wrap long lines if possible */
+      white-space: pre-wrap;
       word-wrap: break-word;
+    }
+
+    /* Mermaid diagrams: always scrollable so SVG never gets clipped */
+    .mermaid {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     /* Lightbox */
@@ -162,6 +168,15 @@
 
       .sidebar .category-button {
         width: auto;
+      }
+
+      /* On mobile: code blocks scroll horizontally instead of wrapping */
+      .content pre,
+      .content pre code {
+        white-space: pre;
+        word-wrap: normal;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
       }
     }
   </style>
