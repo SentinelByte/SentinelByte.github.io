@@ -46,4 +46,8 @@ Articles and guides on cloud architecture, DevSecOps automation, threat modeling
 
 {% include tool_stack.html %}
 
-> *“Build defensible systems, automate the boring, and stay ahead of the threat.”*
+---
+
+Also published at [EnumByte](https://enumbyte.com/) — an independent technical publication covering AI security, cloud infrastructure, and security engineering.
+
+> *”Build defensible systems, automate the boring, and stay ahead of the threat.”*
